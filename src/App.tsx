@@ -1,18 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useState } from "react";
 import { MyContext } from "./Components/Context";
+import Header from "./Components/Header";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: < />,
-    },
-  ]);
+  const [hidden, setHidden] = useState<boolean>(false);
 
   return (
     <>
-      <MyContext.Provider value={{}}>
-        <RouterProvider router={router} />
+      <MyContext.Provider value={{ hidden, setHidden }}>
+        <Header />
       </MyContext.Provider>
     </>
   );
