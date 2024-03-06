@@ -5,18 +5,25 @@ import logo from "../../public/img/weblance-logo.png";
 interface ComponentsProps {
   hidden: boolean;
   setHidden: (hidden: boolean) => void;
+  menu: boolean;
+  setMenu: (menu: boolean) => void;
   className: any;
 }
 
 const StyledBurger = ({
   hidden,
   setHidden,
+  menu,
+  setMenu,
   className,
   ...props
 }: ComponentsProps) => (
   <button
     className={`flex flex-col justify-around w-8 h-8 bg-transparent border-none cursor-pointer p-0 z-10 focus:outline-none mb-[7px] ${className}`}
-    onClick={() => setHidden(!hidden)}
+    onClick={() => {
+      setHidden(!hidden);
+      setMenu(!menu);
+    }}
     {...props}
   >
     <div
@@ -39,7 +46,7 @@ const StyledBurger = ({
 
 function Header() {
   const context = useContext(MyContext);
-  const { hidden, setHidden }: any = context;
+  const { hidden, setHidden, menu, setMenu }: any = context;
 
   return (
     <header className="bg-[black] bg-opacity-50 flex justify-between items-center pr-[15px] w-[100%] h-[70px]">
@@ -51,6 +58,8 @@ function Header() {
         <StyledBurger
           hidden={hidden}
           setHidden={setHidden}
+          menu={menu}
+          setMenu={setMenu}
           className={undefined}
         />
       </div>
