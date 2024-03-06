@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { MyContext } from "./Context";
+import logo from "../../public/img/weblance-logo.png";
 
 interface ComponentsProps {
   hidden: boolean;
@@ -14,7 +15,7 @@ const StyledBurger = ({
   ...props
 }: ComponentsProps) => (
   <button
-    className={`flex flex-col justify-around w-8 h-8 bg-transparent border-none cursor-pointer p-0 z-10 focus:outline-none ${className}`}
+    className={`flex flex-col justify-around w-8 h-8 bg-transparent border-none cursor-pointer p-0 z-10 focus:outline-none mb-[7px] ${className}`}
     onClick={() => setHidden(!hidden)}
     {...props}
   >
@@ -41,14 +42,19 @@ function Header() {
   const { hidden, setHidden }: any = context;
 
   return (
-    <div className="bg-[black] flex justify-c items-center w-[100%] h-[70px]">
-      <StyledBurger
-        hidden={hidden}
-        setHidden={setHidden}
-        className={undefined}
-      />
-      
-    </div>
+    <header className="bg-[black] flex justify-between items-center pr-[15px] w-[100%] h-[70px]">
+      <img className="w-[70px]" src={logo} alt="here is weblance logo" />
+      <div className="flex justify-center items-center">
+        <button className="text-[white] w-[118px] h-[40px] border-[#FFC451] hover:bg-[#FFC451] font-normal border-[2px] rounded-[5px] mr-[15px] pt-[6px] pl-[24px] pr-[20px] pb-[7px]">
+          Get Started
+        </button>
+        <StyledBurger
+          hidden={hidden}
+          setHidden={setHidden}
+          className={undefined}
+        />
+      </div>
+    </header>
   );
 }
 
