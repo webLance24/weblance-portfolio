@@ -3,14 +3,24 @@ import { MyContext } from "./Context";
 
 function Hamburger() {
   const context = useContext(MyContext);
-  const { menu }: any = context;
+  const { menu, setMenu }: any = context;
 
   return (
-    <div className="px-[8px] pt-[8px] pb-[36px] flex absolute right-0 z-10 flex-row-reverse">
+    <>
       {menu && (
-        <div className="bg-[#FFFFFF] rounded-[10px] h-[256px] w-[360px]"></div>
+        <>
+          <div
+            className="fixed inset-0 bg-black opacity-70"
+            onClick={() => {
+              setMenu(!menu);
+            }}
+          ></div>
+          <div className="pl-[8px] pr-[13px] pt-[8px] pb-[36px] flex absolute right-0 z-10 flex-row-reverse">
+            <div className="bg-[#FFFFFF] rounded-[10px] h-[590px] w-[350px]"></div>
+          </div>
+        </>
       )}
-    </div>
+    </>
   );
 }
 
