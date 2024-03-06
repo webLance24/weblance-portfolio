@@ -39,13 +39,15 @@ const StyledBurger = ({
 function Header() {
   const context = useContext(MyContext);
   const { hidden, setHidden }: any = context;
+
   return (
-    <div>
+    <div className="bg-[black] flex justify-c items-center w-[100%] h-[70px]">
       <StyledBurger
         hidden={hidden}
         setHidden={setHidden}
         className={undefined}
       />
+      
     </div>
   );
 }
