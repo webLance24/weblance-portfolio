@@ -5,6 +5,8 @@ interface ComponentsProps {
   setHidden: (hidden: boolean) => void;
   menu: boolean;
   setMenu: (menu: boolean) => void;
+  selected: string;
+  setSelected: (selected: string) => void;
 }
 
 export const MyContext = createContext<ComponentsProps | null>(null);

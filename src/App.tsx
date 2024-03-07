@@ -7,6 +7,8 @@ import Hamburger from "./Components/Hamburger";
 function App() {
   const [hidden, setHidden] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
+  const [selected, setSelected] = useState<string>("Home");
+
   return (
     <>
       <MyContext.Provider
@@ -15,6 +17,8 @@ function App() {
           setHidden,
           menu,
           setMenu,
+          selected,
+          setSelected,
         }}
       >
         <Header />
