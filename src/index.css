@@ -19,3 +19,17 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.slick-slide {
+  max-width: 250px;
+}
+
+.slick-list {
+  max-width: 550px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

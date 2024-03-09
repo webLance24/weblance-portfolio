@@ -2,14 +2,21 @@ import aboutImg from "../../public/img/about.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import client1 from "../../public/img/clients/client-1.png";
+import client2 from "../../public/img/clients/client-2.png";
+import client3 from "../../public/img/clients/client-3.png";
+import client4 from "../../public/img/clients/client-4.png";
+import client5 from "../../public/img/clients/client-5.png";
+import client6 from "../../public/img/clients/client-6.png";
 
 function About() {
   const settings = {
     infinite: false,
     speed: 500,
-    slidesToShow: 1.5,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    dots: true,
   };
 
   return (
@@ -28,7 +35,16 @@ function About() {
           aliquip ex ea commodo consequat.
         </p>
       </div>
-      <Slider {...settings}></Slider>
+      <div className="slider-container">
+        <Slider {...settings}>
+          <img src={client1} alt="" />
+          <img src={client2} alt="" />
+          <img src={client3} alt="" />
+          <img src={client4} alt="" />
+          <img src={client5} alt="" />
+          <img src={client6} alt="" />
+        </Slider>
+      </div>
     </div>
   );
 }
