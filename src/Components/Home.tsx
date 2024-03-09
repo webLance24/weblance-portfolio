@@ -38,7 +38,7 @@ function Home() {
           <h3 className="text-[20px] text-[white]">Lorem Ipsum</h3>
         </div>
         {/* Sixth div */}
-        <div className="w-[100%] h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center">
+        <div className="w-[100%] h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center mb-[50px]">
           <img className="w-[32px]" src={imgOne} alt="market image here" />
           <h3 className="text-[20px] text-[white]">Lorem Ipsum</h3>
         </div>

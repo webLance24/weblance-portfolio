@@ -3,6 +3,7 @@ import { MyContext } from "./Components/Context";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Hamburger from "./Components/Hamburger";
+import About from "./Components/About";
 
 function App() {
   const [hidden, setHidden] = useState<boolean>(false);
@@ -24,6 +25,7 @@ function App() {
         <Header />
         <Hamburger />
         <Home />
+        <About />
       </MyContext.Provider>
     </>
   );
