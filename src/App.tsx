@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Hamburger from "./Components/Hamburger";
 import About from "./Components/About";
 import Services from "./Components/Services";
+import Projects from "./Components/Projects";
 
 function App() {
   const [hidden, setHidden] = useState<boolean>(false);
@@ -28,6 +29,7 @@ function App() {
         <Home />
         <About />
         <Services />
+        <Projects />
       </MyContext.Provider>
     </>
   );
