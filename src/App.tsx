@@ -6,12 +6,12 @@ import Hamburger from "./Components/Hamburger";
 import About from "./Components/About";
 import Services from "./Components/Services";
 import Projects from "./Components/Projects";
+import Layout from "./Components/Layout";
 
 function App() {
   const [hidden, setHidden] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
   const [selected, setSelected] = useState<string>("Home");
-  // const [categorie, setCategorie] = useState<string>("ALL");
 
   return (
     <>
@@ -23,8 +23,6 @@ function App() {
           setMenu,
           selected,
           setSelected,
-          // categorie,
-          // setCategorie,
         }}
       >
         <Header />
@@ -33,6 +31,7 @@ function App() {
         <About />
         <Services />
         <Projects />
+        <Layout />
       </MyContext.Provider>
     </>
   );
