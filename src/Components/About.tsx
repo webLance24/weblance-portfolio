@@ -1,11 +1,5 @@
 import aboutImg from "../../public/img/about.jpg";
 import boo from "../../public/img/boo.png";
-// import client1 from "../../public/img/clients/client-1.png";
-// import client2 from "../../public/img/clients/client-2.png";
-// import client3 from "../../public/img/clients/client-3.png";
-// import client4 from "../../public/img/clients/client-4.png";
-// import client5 from "../../public/img/clients/client-5.png";
-// import client6 from "../../public/img/clients/client-6.png";
 
 function About() {
   return (
@@ -24,11 +18,6 @@ function About() {
           aliquip ex ea commodo consequat.
         </p>
       </div>
-      {/* <div className="flex justify-center items-center">
-        <img src={client1} alt="" style={{ width: "100px" }} />
-        <img src={client2} alt="" style={{ width: "100px" }} />
-        <img src={client3} alt="" style={{ width: "100px" }} />
-      </div> */}
       <div className="flex justify-center flex-col items-center mt-[10px]">
         {/* first container */}
         <div className="flex">

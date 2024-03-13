@@ -1,11 +1,6 @@
-// import { useContext } from "react";
-// import { MyContext } from "./Context";
 import imgOne from "../../public/img/market.png";
 
 function Home() {
-  // const context = useContext(MyContext);
-  // const {}: any = context;
-
   return (
     // here is home page
     <div className="pt-[75px] px-[12px] bg-[black] bg-opacity-60">
