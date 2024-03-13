@@ -24,7 +24,7 @@ function Team() {
             alt="Giorgi Mamulashvilis Photo"
             className="rounded-t-lg"
           />
-          <div className="px-[15px] py-[25px] border-[1px] drop-shadow-2xl rounded-b-lg">
+          <div className="px-[15px] py-[25px] border-[2px] drop-shadow-2xl rounded-b-lg">
             <h4 className="text-[19px] text-[black] font-semibold">
               Giorgi Mamulashvili
             </h4>
@@ -40,7 +40,7 @@ function Team() {
             alt="David Mikeladzes Photo"
             className="rounded-t-lg"
           />
-          <div className="px-[15px] py-[25px] border-[1px] drop-shadow-2xl rounded-b-lg">
+          <div className="px-[15px] py-[25px] border-[2px] rounded-b-lg">
             <h4 className="text-[19px] text-[black] font-semibold">
               David Mikeladze
             </h4>

@@ -8,6 +8,7 @@ import Services from "./Components/Services";
 import Projects from "./Components/Projects";
 import Layout from "./Components/Layout";
 import Team from "./Components/Team";
+import Contact from "./Components/Contact";
 
 function App() {
   const [hidden, setHidden] = useState<boolean>(false);
@@ -37,6 +38,7 @@ function App() {
         <Projects />
         <Layout />
         <Team />
+        <Contact />
       </MyContext.Provider>
     </>
   );
