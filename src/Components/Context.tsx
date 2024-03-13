@@ -7,8 +7,8 @@ interface ComponentsProps {
   setMenu: (menu: boolean) => void;
   selected: string;
   setSelected: (selected: string) => void;
-  // categorie: string;
-  // setCategorie: (categorie: string) => void;
+  categorie: string;
+  setCategorie: (categorie: string) => void;
 }
 
 export const MyContext = createContext<ComponentsProps | null>(null);

@@ -7,15 +7,15 @@ import { useContext } from "react";
 
 export default function Layout() {
   const context = useContext(MyContext);
-  const { selected }: any = context;
+  const { categorie }: any = context;
   return (
     <>
       <div>
         <div>
-          {selected === "DESIGN" && <Design />}
-          {selected === "FRONT" && <Front />}
-          {selected === "BACK" && <Back />}
-          {selected === "ALL" && (
+          {categorie === "DESIGN" && <Design />}
+          {categorie === "FRONT" && <Front />}
+          {categorie === "BACK" && <Back />}
+          {categorie === "ALL" && (
             <>
               <Design />
               <Front />

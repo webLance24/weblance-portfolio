@@ -12,6 +12,7 @@ function App() {
   const [hidden, setHidden] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
   const [selected, setSelected] = useState<string>("Home");
+  const [categorie, setCategorie] = useState<string>("ALL");
 
   return (
     <>
@@ -23,6 +24,8 @@ function App() {
           setMenu,
           selected,
           setSelected,
+          categorie,
+          setCategorie,
         }}
       >
         <Header />

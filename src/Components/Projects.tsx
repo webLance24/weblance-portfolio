@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { MyContext } from "./Context";
-// import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const context = useContext(MyContext);
-  const { selected, setSelected }: any = context;
+  const { categorie, setCategorie }: any = context;
 
   return (
     <div className="bg-[white]">
@@ -23,29 +22,29 @@ function Projects() {
         <ul className="flex justify-center items-center flex-row gap-[2px]">
           <li
             className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setSelected("ALL")}
-            style={selected === "ALL" ? { backgroundColor: "#FFC451" } : {}}
+            onClick={() => setCategorie("ALL")}
+            style={categorie === "ALL" ? { backgroundColor: "#FFC451" } : {}}
           >
             ALL
           </li>
           <li
             className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setSelected("DESIGN")}
-            style={selected === "DESIGN" ? { backgroundColor: "#FFC451" } : {}}
+            onClick={() => setCategorie("DESIGN")}
+            style={categorie === "DESIGN" ? { backgroundColor: "#FFC451" } : {}}
           >
             DESIGN
           </li>
           <li
             className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setSelected("FRONT")}
-            style={selected === "FRONT" ? { backgroundColor: "#FFC451" } : {}}
+            onClick={() => setCategorie("FRONT")}
+            style={categorie === "FRONT" ? { backgroundColor: "#FFC451" } : {}}
           >
             FRONT
           </li>
           <li
             className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setSelected("BACK")}
-            style={selected === "BACK" ? { backgroundColor: "#FFC451" } : {}}
+            onClick={() => setCategorie("BACK")}
+            style={categorie === "BACK" ? { backgroundColor: "#FFC451" } : {}}
           >
             BACK
           </li>
