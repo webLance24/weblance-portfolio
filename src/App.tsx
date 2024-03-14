@@ -9,6 +9,7 @@ import Projects from "./Components/Projects";
 import Layout from "./Components/Layout";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   const [hidden, setHidden] = useState<boolean>(false);
@@ -39,6 +40,7 @@ function App() {
         <Layout />
         <Team />
         <Contact />
+        <Footer />
       </MyContext.Provider>
     </>
   );
