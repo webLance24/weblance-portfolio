@@ -22,19 +22,19 @@ function Footer() {
         {/* here is footer logo images */}
         <div className="flex justify-center items-center gap-[5px] mt-[15px]">
           {/* instagram section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center">
+          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
             <img className="w-[22px] h-[22px]" src={instagram} alt="" />
           </div>
           {/* facebook section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center">
+          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
             <img className="w-[22px] h-[22px]" src={facebook} alt="" />
           </div>
           {/* linkedin section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center">
+          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
             <img className="w-[22px] h-[22px]" src={linkedin} alt="" />
           </div>
           {/* github section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center">
+          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
             <img className="w-[22px] h-[22px]" src={github} alt="" />
           </div>
         </div>
