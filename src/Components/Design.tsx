@@ -11,12 +11,18 @@ function Design() {
     <div className="bg-[white] px-[12px]">
       <div>
         {designImages.map((image, index) => (
-          <img
-            className="pb-[15px]"
-            key={index}
-            src={image.src}
-            alt={image.title}
-          />
+          <div className="main pb-[15px]" key={index}>
+            <img
+              key={index}
+              src={image.src}
+              alt={image.title}
+              className="image block w-[100%] h-auto"
+              style={{ width: "100%" }}
+            />
+            <div className="middle">
+              <div className="text">{image.title}</div>
+            </div>
+          </div>
         ))}
       </div>
     </div>
