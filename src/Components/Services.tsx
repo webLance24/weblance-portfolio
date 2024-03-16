@@ -1,6 +1,6 @@
-import design from "../../public/img/design.png";
-import front from "../../public/img/front.png";
-import back from "../../public/img/back.png";
+import design from "../../public/img/icons/design.png";
+import front from "../../public/img/icons/front.png";
+import back from "../../public/img/icons/back.png";
 
 function Services() {
   return (

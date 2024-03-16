@@ -1,8 +1,8 @@
 import logo from "../../public/img/weblance-logo.png";
-import instagram from "../../public/img/instagram-white.png";
-import facebook from "../../public/img/facebook-white.png";
-import linkedin from "../../public/img/linkedin-white.png";
-import github from "../../public/img/github-white.png";
+import instagram from "../../public/img/social/instagram-white.png";
+import facebook from "../../public/img/social/facebook-white.png";
+import linkedin from "../../public/img/social/linkedin-white.png";
+import github from "../../public/img/social/github-white.png";
 import copyright from "../../public/img/copyright.png";
 
 function Footer() {

@@ -1,4 +1,4 @@
-import imgOne from "../../public/img/market.png";
+import imgOne from "../../public/img/icons/market.png";
 
 function Home() {
   return (

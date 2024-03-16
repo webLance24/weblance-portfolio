@@ -19,3 +19,8 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+/* social media team hover */
+.container:hover .overlay {
+  opacity: 1;
+}

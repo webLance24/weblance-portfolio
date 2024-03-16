@@ -1,7 +1,7 @@
-import location from "../../public/img/location.png";
-import mobile from "../../public/img/mobile.png";
-import instagram from "../../public/img/instagram.png";
-import linkedin from "../../public/img/linkedin.png";
+import location from "../../public/img/icons/location.png";
+import mobile from "../../public/img/icons/mobile.png";
+import instagram from "../../public/img/social/instagram.png";
+import linkedin from "../../public/img/social/linkedin.png";
 
 function Contact() {
   return (

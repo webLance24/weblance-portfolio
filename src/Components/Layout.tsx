@@ -4,9 +4,9 @@ import Front from "./Front";
 import Back from "./Back";
 import { MyContext } from "./Context";
 import { useContext } from "react";
-import smile from "../../public/img/smile.png";
-import project from "../../public/img/project.png";
-import time from "../../public/img/time.png";
+import smile from "../../public/img/icons/smile.png";
+import project from "../../public/img/icons/project.png";
+import time from "../../public/img/icons/time.png";
 
 export default function Layout() {
   const context = useContext(MyContext);
