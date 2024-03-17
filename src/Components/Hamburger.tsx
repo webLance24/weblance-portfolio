@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { MyContext } from "./Context";
+import { Link } from "react-scroll";
 
 function Hamburger() {
   const context = useContext(MyContext);
@@ -25,7 +26,17 @@ function Hamburger() {
                     selected === "Home" ? { backgroundColor: "#FFC451" } : {}
                   }
                 >
-                  <p className="text-[17px]">Home</p>
+                  <Link
+                    to={"home"}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-[17px]"
+                    onClick={() => setMenu(false)}
+                  >
+                    Home
+                  </Link>
                 </div>
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
@@ -34,7 +45,17 @@ function Hamburger() {
                     selected === "About" ? { backgroundColor: "#FFC451" } : {}
                   }
                 >
-                  <p className="text-[17px]">About</p>
+                  <Link
+                    to={"about"}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-[17px]"
+                    onClick={() => setMenu(false)}
+                  >
+                    About
+                  </Link>
                 </div>
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
@@ -45,7 +66,17 @@ function Hamburger() {
                       : {}
                   }
                 >
-                  <p className="text-[17px]">Services</p>
+                  <Link
+                    to={"services"}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-[17px]"
+                    onClick={() => setMenu(false)}
+                  >
+                    Services
+                  </Link>
                 </div>
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
@@ -56,7 +87,17 @@ function Hamburger() {
                       : {}
                   }
                 >
-                  <p className="text-[17px]">Projects</p>
+                  <Link
+                    to={"projects"}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-[17px]"
+                    onClick={() => setMenu(false)}
+                  >
+                    Projects
+                  </Link>
                 </div>
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
@@ -65,7 +106,17 @@ function Hamburger() {
                     selected === "Team" ? { backgroundColor: "#FFC451" } : {}
                   }
                 >
-                  <p className="text-[17px]">Team</p>
+                  <Link
+                    to={"team"}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-[17px]"
+                    onClick={() => setMenu(false)}
+                  >
+                    Team
+                  </Link>
                 </div>
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
@@ -74,7 +125,17 @@ function Hamburger() {
                     selected === "Contact" ? { backgroundColor: "#FFC451" } : {}
                   }
                 >
-                  <p className="text-[17px]">Contact</p>
+                  <Link
+                    to={"contact"}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-[17px]"
+                    onClick={() => setMenu(false)}
+                  >
+                    Contact
+                  </Link>
                 </div>
               </div>
             </div>

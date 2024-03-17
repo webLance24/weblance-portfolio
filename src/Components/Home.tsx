@@ -3,7 +3,7 @@ import imgOne from "../../public/img/icons/market.png";
 function Home() {
   return (
     // here is home page
-    <div className="pt-[75px] px-[12px] bg-[black] bg-opacity-60">
+    <div id="home" className="pt-[75px] px-[12px] bg-[black] bg-opacity-60">
       <h1 className="text-[white] text-[40px] font-bold text-center">
         Powerful Websites with webLance
       </h1>
