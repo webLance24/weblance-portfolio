@@ -22,20 +22,36 @@ function Footer() {
         {/* here is footer logo images */}
         <div className="flex justify-center items-center gap-[5px] mt-[15px]">
           {/* instagram section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
-            <img className="w-[22px] h-[22px]" src={instagram} alt="" />
+          <div>
+            <a href="https://www.instagram.com/weblance17/">
+              <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
+                <img className="w-[22px] h-[22px]" src={instagram} alt="" />
+              </div>
+            </a>
           </div>
           {/* facebook section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
-            <img className="w-[22px] h-[22px]" src={facebook} alt="" />
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=61556147382634">
+              <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
+                <img className="w-[22px] h-[22px]" src={facebook} alt="" />
+              </div>
+            </a>
           </div>
           {/* linkedin section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
-            <img className="w-[22px] h-[22px]" src={linkedin} alt="" />
+          <div>
+            <a href="https://www.linkedin.com/in/web-lance-74496a2b4/">
+              <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
+                <img className="w-[22px] h-[22px]" src={linkedin} alt="" />
+              </div>
+            </a>
           </div>
           {/* github section */}
-          <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
-            <img className="w-[22px] h-[22px]" src={github} alt="" />
+          <div>
+            <a href="https://github.com/webLance24">
+              <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
+                <img className="w-[22px] h-[22px]" src={github} alt="" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
