@@ -19,6 +19,7 @@ function Hamburger() {
           <div className="pl-[8px] pr-[13px] pt-[8px] pb-[36px] flex absolute right-0 z-10 flex-row-reverse">
             <div className="bg-[#FFFFFF] rounded-[10px] h-[590px] w-[350px]">
               <div className="pt-[10px]">
+                {/* home section */}
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
                   onClick={() => setSelected("Home")}
@@ -38,6 +39,7 @@ function Hamburger() {
                     Home
                   </Link>
                 </div>
+                {/* about section */}
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
                   onClick={() => setSelected("About")}
@@ -56,6 +58,8 @@ function Hamburger() {
                   >
                     About
                   </Link>
+
+                  {/* services section */}
                 </div>
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
@@ -78,6 +82,7 @@ function Hamburger() {
                     Services
                   </Link>
                 </div>
+                {/* projects section */}
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
                   onClick={() => setSelected("Projects")}
@@ -99,6 +104,7 @@ function Hamburger() {
                     Projects
                   </Link>
                 </div>
+                {/* team section */}
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
                   onClick={() => setSelected("Team")}
@@ -118,6 +124,7 @@ function Hamburger() {
                     Team
                   </Link>
                 </div>
+                {/* contact section */}
                 <div
                   className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
                   onClick={() => setSelected("Contact")}
