@@ -1,10 +1,12 @@
 import design from "../../public/img/icons/design.png";
 import front from "../../public/img/icons/front.png";
 import back from "../../public/img/icons/back.png";
+import { useRef } from "react";
 
 function Services() {
+  const servicesRef = useRef(null);
   return (
-    <div className="bg-[white]">
+    <div ref={servicesRef} className="bg-[white]">
       <div className="bg-[white] pt-[120px] px-[12px]">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">

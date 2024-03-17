@@ -1,11 +1,14 @@
+import { useRef } from "react";
 import location from "../../public/img/icons/location.png";
 import mobile from "../../public/img/icons/mobile.png";
 import instagram from "../../public/img/social/instagram.png";
 import linkedin from "../../public/img/social/linkedin.png";
 
 function Contact() {
+  const contactRef = useRef(null);
+
   return (
-    <div className="bg-[white] px-[12px] pb-[50px]">
+    <div ref={contactRef} className="bg-[white] px-[12px] pb-[50px]">
       <div className="bg-[white] pt-[120px] ">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">

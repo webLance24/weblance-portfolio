@@ -1,9 +1,14 @@
+import { useRef } from "react";
 import aboutImg from "../../public/img/about.jpg";
 import boo from "../../public/img/icons/boo.png";
 
 function About() {
+  const aboutRef = useRef(null);
   return (
-    <div className="bg-[white] pt-[50px] px-[12px] flex justify-center flex-col items-center">
+    <div
+      ref={aboutRef}
+      className="bg-[white] pt-[50px] px-[12px] flex justify-center flex-col items-center"
+    >
       <img className="w-[100%] h-[100%]" src={aboutImg} alt="" />
       {/* text section */}
       <div className="py-[24px]">
