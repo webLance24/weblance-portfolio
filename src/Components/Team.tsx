@@ -31,28 +31,40 @@ function Team() {
             {/* Social network icons */}
             <div className="overlay flex gap-[15px] absolute bottom-[30px] opacity-0 hover:opacity-100 transition-opacity duration-300">
               {/* instagram section */}
-              <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
-                <img
-                  src={instagramIcon}
-                  alt="Instagram"
-                  className="w-[30px] h-[30px] mx-1"
-                />
+              <div>
+                <a href="https://www.instagram.com/giorgi_mamulashvil1/">
+                  <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                    <img
+                      src={instagramIcon}
+                      alt="Instagram"
+                      className="w-[30px] h-[30px] mx-1"
+                    />
+                  </div>
+                </a>
               </div>
               {/* github section */}
-              <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
-                <img
-                  src={githubIcon}
-                  alt="Github"
-                  className="w-[30px] h-[30px] mx-1"
-                />
+              <div>
+                <a href="https://github.com/gmamulashvili10">
+                  <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                    <img
+                      src={githubIcon}
+                      alt="Github"
+                      className="w-[30px] h-[30px] mx-1"
+                    />
+                  </div>
+                </a>
               </div>
               {/* linkedin section */}
-              <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
-                <img
-                  src={linkedinIcon}
-                  alt="LinkedIn"
-                  className="w-[30px] h-[30px] mx-1"
-                />
+              <div>
+                <a href="https://www.linkedin.com/in/giorgi-mamulashvili-0a7883261/">
+                  <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                    <img
+                      src={linkedinIcon}
+                      alt="LinkedIn"
+                      className="w-[30px] h-[30px] mx-1"
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -84,20 +96,28 @@ function Team() {
                 />
               </div>
               {/* github section */}
-              <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
-                <img
-                  src={githubIcon}
-                  alt="Github"
-                  className="w-[30px] h-[30px] mx-1"
-                />
+              <div>
+                <a href="https://github.com/Davmike">
+                  <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                    <img
+                      src={githubIcon}
+                      alt="Github"
+                      className="w-[30px] h-[30px] mx-1"
+                    />
+                  </div>
+                </a>
               </div>
               {/* linkedin section */}
-              <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
-                <img
-                  src={linkedinIcon}
-                  alt="LinkedIn"
-                  className="w-[30px] h-[30px] mx-1"
-                />
+              <div>
+                <a href="https://www.linkedin.com/in/david-mikeladze-927406264/">
+                  <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                    <img
+                      src={linkedinIcon}
+                      alt="LinkedIn"
+                      className="w-[30px] h-[30px] mx-1"
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
