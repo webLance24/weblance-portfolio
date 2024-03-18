@@ -69,7 +69,7 @@ function Header() {
     <header
       className={`bg-${
         scrolled ? "black" : "transparent"
-      } bg-opacity-80 flex justify-between items-center pr-[15px] w-[100%] h-[70px] fixed`}
+      } bg-opacity-80 flex justify-between items-center pr-[15px] w-[100%] h-[70px] fixed z-10`}
     >
       <img className="w-[70px]" src={logo} alt="here is weblance logo" />
       <div className="flex justify-center items-center">

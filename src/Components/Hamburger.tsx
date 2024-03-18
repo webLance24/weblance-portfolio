@@ -11,7 +11,7 @@ function Hamburger() {
       {menu && (
         <>
           <div
-            className="fixed inset-0 bg-black opacity-70"
+            className="fixed inset-0 bg-black opacity-70 z-10"
             onClick={() => {
               setMenu(!menu);
               setHidden(false);
