@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { MyContext } from "./Context";
 import logo from "../../public/img/weblance-logo.png";
 
@@ -46,10 +46,31 @@ const StyledBurger = ({
 
 function Header() {
   const context = useContext(MyContext);
-  const { hidden, setHidden, menu, setMenu }: any = context;
+  const { hidden, setHidden, menu, setMenu, setScrolled, scrolled }: any =
+    context;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="bg-[black] bg-opacity-60 flex justify-between items-center pr-[15px] w-[100%] h-[70px]">
+    <header
+      className={`bg-${
+        scrolled ? "black" : "transparent"
+      } bg-opacity-80 flex justify-between items-center pr-[15px] w-[100%] h-[70px] fixed`}
+    >
       <img className="w-[70px]" src={logo} alt="here is weblance logo" />
       <div className="flex justify-center items-center">
         <button className="text-[white] w-[118px] h-[40px] outline-none border-[#FFC451] hover:bg-[#FFC451] duration-300 ease-in-out font-normal border-[2px] rounded-[5px] mr-[15px] pt-[6px] pl-[24px] pr-[20px] pb-[7px]">

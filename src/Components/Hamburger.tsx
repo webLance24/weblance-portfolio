@@ -14,9 +14,10 @@ function Hamburger() {
             className="fixed inset-0 bg-black opacity-70"
             onClick={() => {
               setMenu(!menu);
+              setHidden(false);
             }}
           ></div>
-          <div className="pl-[8px] pr-[13px] pt-[8px] pb-[36px] flex absolute right-0 z-10 flex-row-reverse">
+          <div className="pl-[8px] pr-[13px] pt-[8px] pb-[36px] flex fixed mt-[63px] right-0 z-10 flex-row-reverse">
             <div className="bg-[#FFFFFF] rounded-[10px] h-[590px] w-[350px]">
               <div className="pt-[10px]">
                 {/* home section */}

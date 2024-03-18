@@ -16,6 +16,7 @@ function App() {
   const [menu, setMenu] = useState<boolean>(false);
   const [selected, setSelected] = useState<string>("Home");
   const [categorie, setCategorie] = useState<string>("ALL");
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
   return (
     <>
@@ -29,6 +30,8 @@ function App() {
           setSelected,
           categorie,
           setCategorie,
+          scrolled,
+          setScrolled,
         }}
       >
         <Header />

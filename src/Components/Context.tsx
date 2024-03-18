@@ -9,6 +9,8 @@ interface ComponentsProps {
   setSelected: (selected: string) => void;
   categorie: string;
   setCategorie: (categorie: string) => void;
+  scrolled: boolean;
+  setScrolled: (scrolled: boolean) => void;
 }
 
 export const MyContext = createContext<ComponentsProps | null>(null);
