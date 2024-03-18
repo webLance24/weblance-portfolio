@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 function Hamburger() {
   const context = useContext(MyContext);
-  const { menu, setMenu, selected, setSelected }: any = context;
+  const { menu, setMenu, selected, setSelected, setHidden }: any = context;
 
   return (
     <>
@@ -20,130 +20,143 @@ function Hamburger() {
             <div className="bg-[#FFFFFF] rounded-[10px] h-[590px] w-[350px]">
               <div className="pt-[10px]">
                 {/* home section */}
-                <div
-                  className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
-                  onClick={() => setSelected("Home")}
-                  style={
-                    selected === "Home" ? { backgroundColor: "#FFC451" } : {}
-                  }
+                <Link
+                  to={"home"}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => {
+                    setMenu(false);
+                    setHidden(false);
+                  }}
                 >
-                  <Link
-                    to={"home"}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="text-[17px]"
-                    onClick={() => setMenu(false)}
+                  <div
+                    className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
+                    onClick={() => setSelected("Home")}
+                    style={
+                      selected === "Home" ? { backgroundColor: "#FFC451" } : {}
+                    }
                   >
-                    Home
-                  </Link>
-                </div>
+                    <p className="text-[17px]">Home</p>
+                  </div>
+                </Link>
                 {/* about section */}
-                <div
-                  className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
-                  onClick={() => setSelected("About")}
-                  style={
-                    selected === "About" ? { backgroundColor: "#FFC451" } : {}
-                  }
+                <Link
+                  to={"about"}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => {
+                    setMenu(false);
+                    setHidden(false);
+                  }}
                 >
-                  <Link
-                    to={"about"}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="text-[17px]"
-                    onClick={() => setMenu(false)}
+                  <div
+                    className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
+                    onClick={() => setSelected("About")}
+                    style={
+                      selected === "About" ? { backgroundColor: "#FFC451" } : {}
+                    }
                   >
-                    About
-                  </Link>
-
-                  {/* services section */}
-                </div>
-                <div
-                  className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
-                  onClick={() => setSelected("Services")}
-                  style={
-                    selected === "Services"
-                      ? { backgroundColor: "#FFC451" }
-                      : {}
-                  }
+                    <p className="text-[17px]">About</p>
+                  </div>
+                </Link>
+                {/* services section */}
+                <Link
+                  to={"services"}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => {
+                    setMenu(false);
+                    setHidden(false);
+                  }}
                 >
-                  <Link
-                    to={"services"}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="text-[17px]"
-                    onClick={() => setMenu(false)}
+                  <div
+                    className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
+                    onClick={() => setSelected("Services")}
+                    style={
+                      selected === "Services"
+                        ? { backgroundColor: "#FFC451" }
+                        : {}
+                    }
                   >
-                    Services
-                  </Link>
-                </div>
+                    <p className="text-[17px]">Services</p>
+                  </div>
+                </Link>
                 {/* projects section */}
-                <div
-                  className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
-                  onClick={() => setSelected("Projects")}
-                  style={
-                    selected === "Projects"
-                      ? { backgroundColor: "#FFC451" }
-                      : {}
-                  }
+                <Link
+                  to={"projects"}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => {
+                    setMenu(false);
+                    setHidden(false);
+                  }}
                 >
-                  <Link
-                    to={"projects"}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="text-[17px]"
-                    onClick={() => setMenu(false)}
+                  <div
+                    className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
+                    onClick={() => setSelected("Projects")}
+                    style={
+                      selected === "Projects"
+                        ? { backgroundColor: "#FFC451" }
+                        : {}
+                    }
                   >
-                    Projects
-                  </Link>
-                </div>
+                    <p className="text-[17px]">Projects</p>
+                  </div>
+                </Link>
                 {/* team section */}
-                <div
-                  className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
-                  onClick={() => setSelected("Team")}
-                  style={
-                    selected === "Team" ? { backgroundColor: "#FFC451" } : {}
-                  }
+                <Link
+                  to={"team"}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => {
+                    setMenu(false);
+                    setHidden(false);
+                  }}
                 >
-                  <Link
-                    to={"team"}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="text-[17px]"
-                    onClick={() => setMenu(false)}
+                  <div
+                    className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
+                    onClick={() => setSelected("Team")}
+                    style={
+                      selected === "Team" ? { backgroundColor: "#FFC451" } : {}
+                    }
                   >
-                    Team
-                  </Link>
-                </div>
+                    <p className="text-[17px]">Team</p>
+                  </div>
+                </Link>
                 {/* contact section */}
-                <div
-                  className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
-                  onClick={() => setSelected("Contact")}
-                  style={
-                    selected === "Contact" ? { backgroundColor: "#FFC451" } : {}
-                  }
+                <Link
+                  to={"contact"}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => {
+                    setMenu(false);
+                    setHidden(false);
+                  }}
                 >
-                  <Link
-                    to={"contact"}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="text-[17px]"
-                    onClick={() => setMenu(false)}
+                  <div
+                    className="px-[15px] py-[20px] hover:bg-[#FFC451] duration-300 ease-in-out font-normal h-[42px] flex items-center cursor-pointer"
+                    onClick={() => setSelected("Contact")}
+                    style={
+                      selected === "Contact"
+                        ? { backgroundColor: "#FFC451" }
+                        : {}
+                    }
                   >
-                    Contact
-                  </Link>
-                </div>
+                    <p className="text-[17px]">Contact</p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
