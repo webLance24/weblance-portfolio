@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { MyContext } from "./Context";
 import logo from "../../public/img/weblance-logo.png";
+import { Link } from "react-scroll";
 
 interface ComponentsProps {
   hidden: boolean;
@@ -74,9 +75,21 @@ function Header() {
       <div className="max-w-[520px] w-full m-auto flex justify-between items-center px-4">
         <img className="w-[70px]" src={logo} alt="here is weblance logo" />
         <div className="flex">
-          <button className="text-[white] w-[118px] h-[40px] outline-none border-[#FFC451] hover:bg-[#FFC451] duration-300 ease-in-out font-normal border-[2px] rounded-[5px] mr-[15px] pt-[6px] pl-[24px] pr-[20px] pb-[7px]">
-            Get Started
-          </button>
+          <Link
+            to={"home"}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={() => {
+              setMenu(false);
+              setHidden(false);
+            }}
+          >
+            <button className="text-[white] w-[118px] h-[40px] outline-none border-[#FFC451] hover:bg-[#FFC451] duration-300 ease-in-out font-normal border-[2px] rounded-[5px] mr-[15px] pt-[6px] pl-[24px] pr-[20px] pb-[7px]">
+              Get Started
+            </button>
+          </Link>
           <StyledBurger
             hidden={hidden}
             setHidden={setHidden}

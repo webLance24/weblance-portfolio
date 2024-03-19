@@ -27,7 +27,7 @@ export default function Layout() {
             </>
           )}
         </div>
-        <div className="flex justify-center flex-col items-center mt-[10px] px-[12px]">
+        <div className="flex justify-center flex-col items-center mt-[10px] px-[24px]">
           {/* first container */}
           <div className="flex justify-center items-center  gap-[10px]">
             <img src={smile} alt="" className="w-[40px] h-[100%]" />
