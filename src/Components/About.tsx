@@ -7,7 +7,9 @@ function About() {
       id="about"
       className="bg-[white] pt-[50px] px-[12px] flex justify-center flex-col items-center"
     >
-      <img className="w-[100%] h-[100%]" src={aboutImg} alt="" />
+      <div className="max-w-[520px]">
+        <img className="h-[100%]" src={aboutImg} alt="" />
+      </div>
       {/* text section */}
       <div className="py-[24px]">
         <h3 className="text-[#444444] text-[28px] font-bold">

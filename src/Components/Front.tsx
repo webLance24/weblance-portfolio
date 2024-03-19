@@ -10,8 +10,8 @@ const designImages = (
 
 function Front() {
   return (
-    <div className="bg-[white] px-[12px]">
-      <div>
+    <div className="bg-[white] px-[12px] flex justify-center items-center">
+      <div className="max-w-[520px]">
         {designImages.map((image, index) => (
           <div className="main pb-[15px]" key={index}>
             <img

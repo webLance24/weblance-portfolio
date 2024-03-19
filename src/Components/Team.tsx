@@ -19,9 +19,9 @@ function Team() {
         </p>
       </div>
       {/* photo section */}
-      <div className="mt-[40px]">
+      <div className="mt-[40px] flex justify-center items-center flex-col">
         {/* Giorgi */}
-        <div className="mt-[30px]">
+        <div className="mt-[30px] max-w-[520px]">
           <div className="relative flex justify-center items-center container">
             <img
               src={gio}
@@ -78,7 +78,7 @@ function Team() {
           </div>
         </div>
         {/* David */}
-        <div className="mt-[30px]">
+        <div className="mt-[30px] max-w-[520px]">
           <div className="relative flex justify-center items-center container">
             <img
               src={david}

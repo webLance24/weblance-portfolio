@@ -6,7 +6,7 @@ import linkedin from "../../public/img/social/linkedin.png";
 function Contact() {
   return (
     <div id="contact" className="bg-[white] px-[12px] pb-[50px]">
-      <div className="bg-[white] pt-[120px] ">
+      <div className="bg-[white] pt-[120px]">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
             Contact
@@ -18,7 +18,7 @@ function Contact() {
         </p>
       </div>
       {/* Map */}
-      <div style={{ width: "100%", marginTop: "40px" }}>
+      <div style={{ maxWidth: "520px", marginTop: "40px" }}>
         <iframe
           width="100%"
           height="350px"
