@@ -5,7 +5,7 @@ import back from "../../public/img/icons/back.png";
 function Services() {
   return (
     <div id="services" className="bg-[white]">
-      <div className="bg-[white] pt-[120px] px-[12px]">
+      <div className="bg-[white] pt-[120px] px-[12px] max-w-[520px] m-auto">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
             Services
