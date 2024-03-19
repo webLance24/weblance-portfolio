@@ -14,13 +14,15 @@ function Design() {
       <div className="max-w-[520px]">
         {designImages.map((image, index) => (
           <div className="main pb-[15px]" key={index}>
-            <img
-              key={index}
-              src={image.src}
-              alt={image.title}
-              className="block w-[100%] h-auto"
-              style={{ width: "100%" }}
-            />
+            <div className="center overflow-hidden ">
+              <img
+                key={index}
+                src={image.src}
+                alt={image.title}
+                className="block w-[100%] h-auto hover:scale-125 transition-transform duration-500"
+                style={{ width: "100%" }}
+              />
+            </div>
             {/* live links section */}
             <div className="flex">
               {/* github section */}
