@@ -11,7 +11,7 @@ function About() {
         <img className="h-[100%]" src={aboutImg} alt="" />
       </div>
       {/* text section */}
-      <div className="py-[24px]">
+      <div className="py-[24px] max-w-[520px]">
         <h3 className="text-[#444444] text-[28px] font-bold">
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing LOREM IPSUM GENERATOR
