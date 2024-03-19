@@ -7,7 +7,7 @@ import linkedinIcon from "../../public/img/social/linkedin-profile.png";
 function Team() {
   return (
     <div id="team" className="bg-[white] px-[12px]">
-      <div className="bg-[white] pt-[120px] ">
+      <div className="bg-[white] pt-[120px] max-w-[520px] m-auto">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
             Team
