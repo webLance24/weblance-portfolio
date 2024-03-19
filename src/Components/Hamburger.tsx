@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { MyContext } from "./Context";
 import { Link } from "react-scroll";
+import cross from "../../public/img/icons/cross.png";
 
 function Hamburger() {
   const context = useContext(MyContext);
@@ -11,14 +12,23 @@ function Hamburger() {
       {menu && (
         <>
           <div
-            className="fixed inset-0 bg-black opacity-70 z-10"
+            className="fixed inset-0 bg-black opacity-80 z-10"
             onClick={() => {
               setMenu(!menu);
               setHidden(false);
             }}
           ></div>
-          <div className="pl-[8px] pr-[13px] pt-[8px] pb-[36px] flex fixed mt-[63px] right-0 z-10 flex-row-reverse">
-            <div className="bg-[#FFFFFF] rounded-[10px] h-[590px] w-[350px]">
+          <div className="pl-[8px] pr-[13px] w-[100%] pt-[8px] pb-[36px] flex flex-col fixed mt-[63px] right-0 z-10">
+            <img
+              src={cross}
+              alt="cross image for hamburger menu"
+              className="w-[30px] h-[30px] ml-[auto] mb-[10px]"
+              onClick={() => {
+                setMenu(!menu);
+                setHidden(false);
+              }}
+            />
+            <div className="bg-[#FFFFFF] rounded-[10px] h-[590px] w-[100%]">
               <div className="pt-[10px]">
                 {/* home section */}
                 <Link
