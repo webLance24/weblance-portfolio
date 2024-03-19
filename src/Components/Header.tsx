@@ -69,20 +69,22 @@ function Header() {
     <header
       className={`bg-${
         scrolled ? "black" : "transparent"
-      } bg-opacity-80 flex justify-between items-center pr-[15px] w-[100%] h-[70px] fixed z-10`}
+      } bg-opacity-80 flex items-center pr-[15px] w-[100%] h-[70px] fixed z-10`}
     >
-      <img className="w-[70px]" src={logo} alt="here is weblance logo" />
-      <div className="flex justify-center items-center">
-        <button className="text-[white] w-[118px] h-[40px] outline-none border-[#FFC451] hover:bg-[#FFC451] duration-300 ease-in-out font-normal border-[2px] rounded-[5px] mr-[15px] pt-[6px] pl-[24px] pr-[20px] pb-[7px]">
-          Get Started
-        </button>
-        <StyledBurger
-          hidden={hidden}
-          setHidden={setHidden}
-          menu={menu}
-          setMenu={setMenu}
-          className={undefined}
-        />
+      <div className="max-w-[520px] w-full m-auto flex justify-between items-center px-4">
+        <img className="w-[70px]" src={logo} alt="here is weblance logo" />
+        <div className="flex">
+          <button className="text-[white] w-[118px] h-[40px] outline-none border-[#FFC451] hover:bg-[#FFC451] duration-300 ease-in-out font-normal border-[2px] rounded-[5px] mr-[15px] pt-[6px] pl-[24px] pr-[20px] pb-[7px]">
+            Get Started
+          </button>
+          <StyledBurger
+            hidden={hidden}
+            setHidden={setHidden}
+            menu={menu}
+            setMenu={setMenu}
+            className={undefined}
+          />
+        </div>
       </div>
     </header>
   );
