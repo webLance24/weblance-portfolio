@@ -7,11 +7,11 @@ function About() {
       id="about"
       className="bg-[white] pt-[50px] px-[12px] flex justify-center flex-col items-center"
     >
-      <div className="max-w-[520px]">
-        <img className="h-[100%]" src={aboutImg} alt="" />
+      <div className="max-w-[520px] md:max-w-[696px]">
+        <img className="h-[100%] md:w-[696px]" src={aboutImg} alt="" />
       </div>
       {/* text section */}
-      <div className="py-[24px] max-w-[520px]">
+      <div className="py-[24px] max-w-[520px] md:max-w-[696px]">
         <h3 className="text-[#444444] text-[28px] font-bold">
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing LOREM IPSUM GENERATOR

@@ -7,7 +7,7 @@ function Projects() {
 
   return (
     <div id="projects" className="bg-[white]">
-      <div className="bg-[white] pt-[120px] px-[12px] max-w-[520px] m-auto">
+      <div className="bg-[white] pt-[120px] px-[12px] max-w-[520px] m-auto md:max-w-[696px]">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
             Projects

@@ -22,7 +22,7 @@ function Hamburger() {
             <img
               src={cross}
               alt="cross image for hamburger menu"
-              className="w-[30px] h-[30px] ml-[auto] mb-[10px]"
+              className="w-[30px] h-[30px] ml-[auto] mb-[10px] cursor-pointer"
               onClick={() => {
                 setMenu(!menu);
                 setHidden(false);

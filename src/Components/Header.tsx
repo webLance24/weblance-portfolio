@@ -72,7 +72,7 @@ function Header() {
         scrolled ? "black" : "transparent"
       } bg-opacity-80 flex items-center pr-[15px] w-[100%] h-[70px] fixed z-10`}
     >
-      <div className="max-w-[520px] w-full m-auto flex justify-between items-center px-4">
+      <div className="max-w-[520px] w-full m-auto flex justify-between items-center px-4 md:max-w-[1000px]">
         <img className="w-[70px]" src={logo} alt="here is weblance logo" />
         <div className="flex">
           <Link
