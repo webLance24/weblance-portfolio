@@ -14,7 +14,7 @@ export default function Layout() {
   return (
     <>
       <div className="bg-[white]">
-        <div>
+        <div className="md:flex md:flex-wrap">
           {categorie === "DESIGN" && <Design />}
           {categorie === "FRONT" && <Front />}
           {categorie === "BACK" && <Back />}

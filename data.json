@@ -9,11 +9,11 @@
         },
         {
           "title": "Front-end 2",
-          "src": "./img/portfolio/back-3.jpg"
+          "src": "./img/portfolio/front-4.jpg"
         },
         {
           "title": "Front-end 3",
-          "src": "./img/portfolio/back-4.jpg"
+          "src": "./img/portfolio/front-4.jpg"
         }
       ]
     },
@@ -26,11 +26,11 @@
         },
         {
           "title": "Back-end 2",
-          "src": "./img/portfolio/back-1.jpg"
+          "src": "./img/portfolio/front-2.jpg"
         },
         {
           "title": "Back-end 3",
-          "src": "./img/portfolio/design-1.jpg"
+          "src": "./img/portfolio/front-2.jpg"
         }
       ]
     },
@@ -39,7 +39,7 @@
       "images": [
         {
           "title": "Design 1",
-          "src": "./img/portfolio/front-1.jpg"
+          "src": "./img/portfolio/front-2.jpg"
         },
         {
           "title": "Design 2",
@@ -47,7 +47,7 @@
         },
         {
           "title": "Design 3",
-          "src": "./img/portfolio/back-2.jpg"
+          "src": "./img/portfolio/front-3.jpg"
         }
       ]
     }
