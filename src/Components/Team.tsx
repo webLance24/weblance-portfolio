@@ -1,4 +1,4 @@
-import david from "../../public/img/team/david.jpg";
+// import david from "../../public/img/team/david.jpg";
 import gio from "../../public/img/team/gio.jpg";
 import instagramIcon from "../../public/img/social/instagram-profile.png";
 import githubIcon from "../../public/img/social/github-profile.png";
@@ -7,7 +7,7 @@ import linkedinIcon from "../../public/img/social/linkedin-profile.png";
 function Team() {
   return (
     <div id="team" className="bg-[white] px-[12px]">
-      <div className="bg-[white] pt-[120px] max-w-[520px] m-auto">
+      <div className="bg-[white] pt-[120px] max-w-[520px] m-auto md:max-w-[696px]">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
             Team
@@ -19,9 +19,9 @@ function Team() {
         </p>
       </div>
       {/* photo section */}
-      <div className="mt-[40px] flex justify-center items-center flex-col">
+      <div className="mt-[40px] md:max-w-[670px] m-auto md:gap-[40px] grid grid-cols-1 md:grid-cols-2 place-items-center">
         {/* Giorgi */}
-        <div className="mt-[30px] max-w-[520px]">
+        <div className="mt-[30px] max-w-[520px] md:w-[336px]">
           <div className="relative flex justify-center items-center container">
             <img
               src={gio}
@@ -78,10 +78,10 @@ function Team() {
           </div>
         </div>
         {/* David */}
-        <div className="mt-[30px] max-w-[520px]">
+        <div className="mt-[30px] max-w-[520px] md:w-[336px]">
           <div className="relative flex justify-center items-center container">
             <img
-              src={david}
+              src={gio}
               alt="David Mikeladzes Photo"
               className="rounded-t-lg block w-[100%] h-auto"
             />
