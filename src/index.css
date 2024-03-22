@@ -57,3 +57,11 @@ body {
   font-size: 16px;
   padding: 16px 32px;
 }
+
+/* tablet */
+
+@media (min-width: 768px) {
+  .map {
+    max-width: 768px;
+  }
+}
