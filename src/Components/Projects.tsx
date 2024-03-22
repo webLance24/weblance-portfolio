@@ -1,9 +1,20 @@
-import { useContext } from "react";
-import { MyContext } from "./Context";
+import { useState } from "react";
+import data from "../../data.json";
 
 function Projects() {
-  const context = useContext(MyContext);
-  const { categorie, setCategorie }: any = context;
+  const categories = [
+    { title: "ALL", category: "" },
+    { title: "DESIGN", category: "design" },
+    { title: "FRONT", category: "front-end" },
+    { title: "BACK", category: "back-end" },
+  ];
+  const [filterCategory, setFilterCategory] = useState<string>("ALL");
+
+  // Filter images based on selected category
+  const filteredImages = filterCategory
+    ? data.photos.find((category) => category.category === filterCategory)
+        ?.images || []
+    : data.photos.flatMap((category) => category.images);
 
   return (
     <div id="projects" className="bg-[white]">
@@ -18,37 +29,44 @@ function Projects() {
           Check our Projects
         </p>
       </div>
+      {/* category section */}
       <div className="mt-[40px] pb-[20px]">
         <ul className="flex justify-center items-center flex-row gap-[2px]">
-          <li
-            className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setCategorie("ALL")}
-            style={categorie === "ALL" ? { backgroundColor: "#FFC451" } : {}}
-          >
-            ALL
-          </li>
-          <li
-            className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setCategorie("DESIGN")}
-            style={categorie === "DESIGN" ? { backgroundColor: "#FFC451" } : {}}
-          >
-            DESIGN
-          </li>
-          <li
-            className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setCategorie("FRONT")}
-            style={categorie === "FRONT" ? { backgroundColor: "#FFC451" } : {}}
-          >
-            FRONT
-          </li>
-          <li
-            className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
-            onClick={() => setCategorie("BACK")}
-            style={categorie === "BACK" ? { backgroundColor: "#FFC451" } : {}}
-          >
-            BACK
-          </li>
+          {categories.map((category, index) => {
+            return (
+              <li
+                className="text-[14px] font-normal px-[15px] pt-[3px] pb-[3px] rounded-[5px] hover:bg-[#FFC451] duration-300 ease-in-out cursor-pointer"
+                onClick={() => setFilterCategory(category.category)}
+                key={index}
+                style={
+                  category.title === filterCategory
+                    ? { backgroundColor: "#FFC451" }
+                    : {}
+                }
+              >
+                {category.title}
+              </li>
+            );
+          })}
         </ul>
+      </div>
+      {/* images filter */}
+      <div className="bg-[white] px-[12px] flex justify-center items-center">
+        <div className="max-w-[520px] md:max-w-[696px] md:w-[336px]">
+          {filteredImages.map((image, index) => (
+            <div className="main pb-[15px]" key={index}>
+              <div className="center overflow-hidden cursor-pointer">
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.title}
+                  className="block w-[100%] h-auto hover:scale-125 transition-transform duration-500"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
