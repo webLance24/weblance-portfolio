@@ -70,7 +70,7 @@ function Header() {
     <header
       className={`bg-${
         scrolled ? "black" : "transparent"
-      } bg-opacity-80 flex items-center pr-[15px] w-[100%] h-[70px] fixed z-10 xl:hidden`}
+      } bg-opacity-80 flex items-center pr-[15px] w-[100%] h-[70px] fixed z-10 lg:hidden`}
     >
       <div className="max-w-[520px] w-full m-auto flex justify-between items-center px-4 md:max-w-[1000px]">
         <img className="w-[70px]" src={logo} alt="here is weblance logo" />
