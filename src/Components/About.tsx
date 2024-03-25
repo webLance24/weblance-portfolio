@@ -7,14 +7,14 @@ function About() {
       id="about"
       className="bg-[white] pt-[50px] px-[12px] flex justify-center flex-col items-center"
     >
-      <div className="py-[24px] max-w-[520px] md:max-w-[696px] lg:flex lg:flex-row-reverse lg:max-w-[948px] lg:gap-[30px]">
+      <div className="py-[24px] max-w-[520px] md:max-w-[696px] lg:flex lg:flex-row-reverse lg:max-w-[948px] lg:gap-[30px] xl:max-w-[1280px]">
         <img
-          className="h-[100%] md:w-[696px] lg:w-[456px]"
+          className="h-[100%] md:w-[696px] lg:w-[456px] xl:w-[546px]"
           src={aboutImg}
           alt=""
         />
         {/* text section */}
-        <div className="lg:flex lg:flex-col">
+        <div className="lg:flex lg:flex-col xl:w-[546px]">
           <h3 className="text-[#444444] text-[28px] font-bold mt-[24px] lg:mt-0">
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing LOREM IPSUM GENERATOR
@@ -27,15 +27,15 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="py-[24px] mt-[36px] max-w-[520px] md:max-w-[696px] lg:flex lg:flex-row lg:max-w-[948px] lg:gap-[30px]">
+      <div className="py-[24px] mt-[36px] max-w-[520px] md:max-w-[696px] lg:flex lg:flex-row lg:max-w-[948px] lg:gap-[30px] xl:max-w-[1280px]">
         {/* first container */}
         <img
-          className="h-[100%] md:w-[696px] lg:w-[456px]"
+          className="h-[100%] md:w-[696px] lg:w-[456px] xl:w-[546px]"
           src={aboutImg}
           alt=""
         />
         {/* for all container */}
-        <div className="mt-[40px] lg:mt-0 lg:flex lg:flex-col">
+        <div className="mt-[40px] lg:mt-0 lg:flex lg:flex-col ">
           <div className="flex">
             <img src={boo} alt="" className="w-[70px] h-[100%]" />
             <div>
