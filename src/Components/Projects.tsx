@@ -20,7 +20,7 @@ function Projects() {
 
   return (
     <div id="projects" className="bg-[white]">
-      <div className="bg-[white] pt-[120px] px-[12px] max-w-[520px] m-auto md:max-w-[696px]">
+      <div className="bg-[white] pt-[120px] px-[12px] max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px]">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
             Projects
@@ -54,7 +54,7 @@ function Projects() {
       </div>
       {/* images filter */}
       <div className="bg-[white] px-[12px] flex justify-center items-center">
-        <div className="max-w-[520px] md:max-w-[670px] lg:max-w-[1024px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="max-w-[520px] md:max-w-[670px] lg:max-w-[948px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredImages.map((image, index) => (
             <div className="main pb-[15px]" key={index}>
               <div className="center overflow-hidden cursor-pointer">
