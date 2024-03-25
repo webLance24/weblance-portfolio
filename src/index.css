@@ -61,7 +61,4 @@ body {
 /* tablet */
 
 @media (min-width: 768px) {
-  .map {
-    max-width: 768px;
-  }
 }

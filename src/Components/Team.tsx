@@ -32,7 +32,10 @@ function Team() {
             <div className="overlay flex gap-[15px] absolute bottom-[30px] opacity-0 hover:opacity-100 transition-opacity duration-300">
               {/* instagram section */}
               <div>
-                <a href="https://www.instagram.com/giorgi_mamulashvil1/">
+                <a
+                  href="https://www.instagram.com/giorgi_mamulashvil1/"
+                  target="_blank"
+                >
                   <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
                     <img
                       src={instagramIcon}
@@ -44,7 +47,7 @@ function Team() {
               </div>
               {/* github section */}
               <div>
-                <a href="https://github.com/gmamulashvili10">
+                <a href="https://github.com/gmamulashvili10" target="_blank">
                   <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
                     <img
                       src={githubIcon}
@@ -56,7 +59,10 @@ function Team() {
               </div>
               {/* linkedin section */}
               <div>
-                <a href="https://www.linkedin.com/in/giorgi-mamulashvili-0a7883261/">
+                <a
+                  href="https://www.linkedin.com/in/giorgi-mamulashvili-0a7883261/"
+                  target="_blank"
+                >
                   <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
                     <img
                       src={linkedinIcon}
@@ -97,7 +103,7 @@ function Team() {
               </div>
               {/* github section */}
               <div>
-                <a href="https://github.com/Davmike">
+                <a href="https://github.com/Davmike" target="_blank">
                   <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
                     <img
                       src={githubIcon}
@@ -109,7 +115,10 @@ function Team() {
               </div>
               {/* linkedin section */}
               <div>
-                <a href="https://www.linkedin.com/in/david-mikeladze-927406264/">
+                <a
+                  href="https://www.linkedin.com/in/david-mikeladze-927406264/"
+                  target="_blank"
+                >
                   <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
                     <img
                       src={linkedinIcon}
