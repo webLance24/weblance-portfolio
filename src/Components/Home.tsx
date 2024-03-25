@@ -10,32 +10,32 @@ function Home() {
         </h1>
       </div>
       <p className="text-[white] text-[20px] font-light text-center md:text-[24px]">
-        We are team of talented digital developers
+        We are team of talented digital developerss
       </p>
       {/* Containers section */}
-      <div className="flex justify-center items-center flex-col m-auto gap-[20px] mt-[40px] max-w-[520px] md:flex-wrap md:flex-row md:max-w-[1000px] md:pb-[50px]">
+      <div className="flex justify-center items-center flex-col m-auto gap-[20px] mt-[40px] max-w-[520px] md:flex-wrap md:flex-row md:max-w-[1024px] md:pb-[50px]">
         {/* First div */}
-        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px]">
+        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px] lg:w-[296px] lg:h-[130px]">
           <img className="w-[32px]" src={imgOne} alt="market image here" />
           <h3 className="text-[20px] text-[white]">Lorem Ipsum</h3>
         </div>
         {/* Second div */}
-        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px]">
+        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px] lg:w-[296px] lg:h-[130px]">
           <img className="w-[32px]" src={imgOne} alt="market image here" />
           <h3 className="text-[20px] text-[white]">Lorem Ipsum</h3>
         </div>
         {/* third div */}
-        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px]">
+        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px] lg:w-[296px] lg:h-[130px]">
           <img className="w-[32px]" src={imgOne} alt="market image here" />
           <h3 className="text-[20px] text-[white]">Lorem Ipsum</h3>
         </div>
         {/* Fourth div */}
-        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px]">
+        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center md:w-[216px] md:h-[156px] lg:w-[296px] lg:h-[130px]">
           <img className="w-[32px]" src={imgOne} alt="market image here" />
           <h3 className="text-[20px] text-[white]">Lorem Ipsum</h3>
         </div>
         {/* Sixth div */}
-        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center mb-[50px] md:w-[216px] md:h-[156px] md:mb-0">
+        <div className="w-full h-[130px] border-[gray] border-[2px] flex flex-col justify-center items-center mb-[50px] md:w-[216px] md:h-[156px] md:mb-0 lg:w-[296px] lg:h-[130px]">
           <img className="w-[32px]" src={imgOne} alt="market image here" />
           <h3 className="text-[20px] text-[white]">Lorem Ipsum</h3>
         </div>
