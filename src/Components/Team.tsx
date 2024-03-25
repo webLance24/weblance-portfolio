@@ -54,7 +54,7 @@ function Team() {
         </p>
       </div>
       {/* photo section */}
-      <div className="mt-[40px] md:max-w-[670px] m-auto md:gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center lg:max-w-[948px]">
+      <div className="mt-[40px] md:max-w-[670px] m-auto md:gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[20px] lg:px-[10px] place-items-center lg:max-w-[948px]">
         {/* Giorgi */}
         {categories.map((category, index) => {
           return (
