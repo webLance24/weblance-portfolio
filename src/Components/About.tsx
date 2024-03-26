@@ -30,7 +30,7 @@ function About() {
       <div className="py-[24px] mt-[36px] max-w-[520px] md:max-w-[696px] lg:flex lg:flex-row lg:max-w-[948px] lg:gap-[30px] xl:max-w-[1280px] 2xl:max-w-[1536px]">
         {/* first container */}
         <img
-          className="h-[100%] md:w-[696px] lg:w-[456px] xl:w-[546px] 2xl:w-[636px]"
+          className="h-auto md:w-[696px] lg:w-[456px] xl:w-[546px] 2xl:w-[636px]"
           src={aboutImg}
           alt=""
         />
