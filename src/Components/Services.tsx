@@ -1,6 +1,6 @@
-import design from "../../public/assets/icons/design.png";
-import front from "../../public/assets/icons/front.png";
-import back from "../../public/assets/icons/back.png";
+import design from "../../src/assets/icons/design.png";
+import front from "../../src/assets/icons/front.png";
+import back from "../../src/assets/icons/back.png";
 
 function Services() {
   const categories = [
