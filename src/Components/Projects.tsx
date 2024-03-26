@@ -1,7 +1,7 @@
 import { useState } from "react";
 import data from "../../data.json";
-import github from "../../public/img/social/github-white.png";
-import link from "../../public/img/social/link.png";
+import github from "../../public/assets/social/github-white.png";
+import link from "../../public/assets/social/link.png";
 
 function Projects() {
   const categories = [

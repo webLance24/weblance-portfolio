@@ -1,5 +1,5 @@
-import aboutImg from "../../public/img/about.jpg";
-import boo from "../../public/img/icons/boo.png";
+import aboutImg from "../../public/assets/about.jpg";
+import boo from "../../public/assets/icons/boo.png";
 
 function About() {
   return (

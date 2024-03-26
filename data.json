@@ -5,15 +5,15 @@
       "images": [
         {
           "title": "Front-end 1",
-          "src": "./img/portfolio/front-4.jpg"
+          "src": "./assets/portfolio/front-4.jpg"
         },
         {
           "title": "Front-end 2",
-          "src": "./img/portfolio/front-4.jpg"
+          "src": "./assets/portfolio/front-4.jpg"
         },
         {
           "title": "Front-end 3",
-          "src": "./img/portfolio/front-4.jpg"
+          "src": "./assets/portfolio/front-4.jpg"
         }
       ]
     },
@@ -22,15 +22,15 @@
       "images": [
         {
           "title": "Back-end 1",
-          "src": "./img/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/front-2.jpg"
         },
         {
           "title": "Back-end 2",
-          "src": "./img/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/front-2.jpg"
         },
         {
           "title": "Back-end 3",
-          "src": "./img/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/front-2.jpg"
         }
       ]
     },
@@ -39,15 +39,15 @@
       "images": [
         {
           "title": "Design 1",
-          "src": "./img/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/front-2.jpg"
         },
         {
           "title": "Design 2",
-          "src": "./img/portfolio/front-3.jpg"
+          "src": "./assets/portfolio/front-3.jpg"
         },
         {
           "title": "Design 3",
-          "src": "./img/portfolio/front-3.jpg"
+          "src": "./assets/portfolio/front-3.jpg"
         }
       ]
     }

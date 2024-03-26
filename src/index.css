@@ -12,11 +12,11 @@
 
 body {
   background: #1e213f;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   font-family: "Oswald", sans-serif;
-  background-image: url("../public/img/hero-bg.jpg");
+  background-image: url("../public/assets/hero-bg.jpg");
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }

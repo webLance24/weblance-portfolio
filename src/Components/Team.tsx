@@ -1,8 +1,8 @@
-// import david from "../../public/img/team/david.jpg";
-import gio from "../../public/img/team/gio.jpg";
-import instagramIcon from "../../public/img/social/instagram-profile.png";
-import githubIcon from "../../public/img/social/github-profile.png";
-import linkedinIcon from "../../public/img/social/linkedin-profile.png";
+// import david from "../../public/assets/team/david.jpg";
+import gio from "../../public/assets/team/gio.jpg";
+import instagramIcon from "../../public/assets/social/instagram-profile.png";
+import githubIcon from "../../public/assets/social/github-profile.png";
+import linkedinIcon from "../../public/assets/social/linkedin-profile.png";
 
 function Team() {
   const categories = [

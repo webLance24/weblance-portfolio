@@ -9,7 +9,7 @@ import Projects from "./Components/Projects";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import DesktopHeader from "./DesktopHeader";
+import DesktopHeader from "./Components/DesktopHeader";
 
 function App() {
   const [hidden, setHidden] = useState<boolean>(false);
