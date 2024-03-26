@@ -76,11 +76,11 @@ function Team() {
                       href="https://www.instagram.com/giorgi_mamulashvil1/"
                       target="_blank"
                     >
-                      <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                      <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer md:w-[45px] md:h-[45px]">
                         <img
                           src={category.insta}
                           alt="Instagram"
-                          className="w-[30px] h-[30px] mx-1"
+                          className="w-[30px] h-[30px] mx-1 md:w-[25px] md:h-[25px]"
                         />
                       </div>
                     </a>
@@ -91,11 +91,11 @@ function Team() {
                       href="https://github.com/gmamulashvili10"
                       target="_blank"
                     >
-                      <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                      <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer md:w-[45px] md:h-[45px]">
                         <img
                           src={category.github}
                           alt="Github"
-                          className="w-[30px] h-[30px] mx-1"
+                          className="w-[30px] h-[30px] mx-1 md:w-[25px] md:h-[25px]"
                         />
                       </div>
                     </a>
@@ -106,11 +106,11 @@ function Team() {
                       href="https://www.linkedin.com/in/giorgi-mamulashvili-0a7883261/"
                       target="_blank"
                     >
-                      <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer">
+                      <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer md:w-[45px] md:h-[45px]">
                         <img
                           src={category.linkedin}
                           alt="LinkedIn"
-                          className="w-[30px] h-[30px] mx-1"
+                          className="w-[30px] h-[30px] mx-1 md:w-[25px] md:h-[25px]x"
                         />
                       </div>
                     </a>
