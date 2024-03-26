@@ -37,7 +37,7 @@ function Contact() {
           <div>
             <h4 className="text-[black] text-[22px] font-normal">Location:</h4>
             <p className="text-[#444444] text-[14px] font-normal">
-              Georgia, Batumi
+              Georgia, Tbilisi
             </p>
           </div>
         </div>
@@ -49,7 +49,9 @@ function Contact() {
           <div>
             <h4 className="text-[black] text-[22px] font-normal">Mobile:</h4>
             <p className="text-[#444444] text-[14px] font-normal">
-              +995 577 22 48 31
+              <a href="tel:+995599000990" target="_blank">
+                +995 599 00 09 90
+              </a>
             </p>
           </div>
         </div>
@@ -60,7 +62,14 @@ function Contact() {
           </div>
           <div>
             <h4 className="text-[black] text-[22px] font-normal">Linkedin:</h4>
-            <p className="text-[#444444] text-[14px] font-normal">@webLance</p>
+            <a
+              href="https://www.linkedin.com/in/web-lance-74496a2b4/"
+              target="_blank"
+            >
+              <p className="text-[#444444] text-[14px] font-normal">
+                @webLance
+              </p>
+            </a>
           </div>
         </div>
         {/* instagram */}
@@ -70,7 +79,11 @@ function Contact() {
           </div>
           <div>
             <h4 className="text-[black] text-[22px] font-normal">Instagram:</h4>
-            <p className="text-[#444444] text-[14px] font-normal">weblance17</p>
+            <a href="https://www.instagram.com/weblance17/" target="_blank">
+              <p className="text-[#444444] text-[14px] font-normal">
+                weblance17
+              </p>
+            </a>
           </div>
         </div>
       </div>

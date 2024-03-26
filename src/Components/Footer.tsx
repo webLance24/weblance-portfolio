@@ -13,17 +13,23 @@ function Footer() {
         <p className="text-[#D9E5F0]">Georgia, Tbilisi</p>
         <div className="mt-[15px]">
           <p className="text-[#D9E5F0] mr-auto font-light">
-            <span className="font-bold">Phone:</span> +995 577 22 48 31
+            <span className="font-bold">Phone:</span>{" "}
+            <a href="tel:+995599000990" target="_blank">
+              +995 599 00 09 90
+            </a>
           </p>
           <p className="text-[#D9E5F0] font-light">
-            <span className="font-bold">Email:</span> weblance17@gmail.com
+            <span className="font-bold">Email:</span>{" "}
+            <a href="mailto:weblance17@gmail.com" target="_blank">
+              weblance17@gmail.com
+            </a>
           </p>
         </div>
         {/* here is footer logo images */}
         <div className="flex justify-center items-center gap-[5px] mt-[15px]">
           {/* instagram section */}
           <div>
-            <a href="https://www.instagram.com/weblance17/">
+            <a href="https://www.instagram.com/weblance17/" target="_blank">
               <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
                 <img className="w-[22px] h-[22px]" src={instagram} alt="" />
               </div>
@@ -31,7 +37,10 @@ function Footer() {
           </div>
           {/* facebook section */}
           <div>
-            <a href="https://www.facebook.com/profile.php?id=61556147382634">
+            <a
+              href="https://www.facebook.com/profile.php?id=61556147382634"
+              target="_blank"
+            >
               <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
                 <img className="w-[22px] h-[22px]" src={facebook} alt="" />
               </div>
@@ -39,7 +48,10 @@ function Footer() {
           </div>
           {/* linkedin section */}
           <div>
-            <a href="https://www.linkedin.com/in/web-lance-74496a2b4/">
+            <a
+              href="https://www.linkedin.com/in/web-lance-74496a2b4/"
+              target="_blank"
+            >
               <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
                 <img className="w-[22px] h-[22px]" src={linkedin} alt="" />
               </div>
@@ -47,7 +59,7 @@ function Footer() {
           </div>
           {/* github section */}
           <div>
-            <a href="https://github.com/webLance24">
+            <a href="https://github.com/webLance24" target="_blank">
               <div className="w-[36px] h-[36px] bg-[#292929] rounded-[5px] flex justify-center items-center hover:bg-[#FFC451] cursor-pointer">
                 <img className="w-[22px] h-[22px]" src={github} alt="" />
               </div>
@@ -64,7 +76,10 @@ function Footer() {
           </p>
         </div>
         <p className="text-[white] text-[14px] font-light tracking-widest pt-[10px]">
-          Designed by <span className="text-[#FFC451]">webLance</span>
+          Designed by{" "}
+          <a href="portfolio-xi-murex-47.vercel.app" target="_blank">
+            <span className="text-[#FFC451]">webLance</span>
+          </a>
         </p>
       </div>
     </>
