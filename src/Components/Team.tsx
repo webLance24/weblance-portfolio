@@ -42,7 +42,7 @@ function Team() {
 
   return (
     <div id="team" className="bg-[white] px-[12px]">
-      <div className="bg-[white] pt-[120px] max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px]">
+      <div className="bg-[white] pt-[120px] max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px] xl:max-w-[1180px] 2xl:max-w-[1325px]">
         <div className="flex items-center gap-[10px]">
           <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
             Team
@@ -54,12 +54,12 @@ function Team() {
         </p>
       </div>
       {/* photo section */}
-      <div className="mt-[40px] md:max-w-[670px] m-auto md:gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[20px] lg:px-[10px] place-items-center lg:max-w-[948px]">
-        {/* Giorgi */}
+      <div className="mt-[40px] md:max-w-[670px] m-auto md:gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[20px] lg:px-[10px] place-items-center lg:max-w-[948px] xl:max-w-[1180px] 2xl:max-w-[1325px]">
+        {/* members */}
         {categories.map((category, index) => {
           return (
             <div
-              className="mt-[30px] max-w-[520px] md:w-[336px] lg:w-[216px]"
+              className="mt-[30px] max-w-[520px] md:w-[336px] lg:w-[216px] xl:w-[261px] 2xl:w-[306px]"
               key={index}
             >
               <div className="relative flex justify-center items-center container">

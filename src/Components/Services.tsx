@@ -38,7 +38,7 @@ function Services() {
 
   return (
     <div id="services" className="bg-[white]">
-      <div className="bg-[white] pt-[120px] px-[12px] max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px] xl:max-w-[1180px]">
+      <div className="bg-[white] pt-[120px] px-[12px] max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px] xl:max-w-[1180px] 2xl:max-w-[1325px]">
         <div className="pb-[40px]">
           <div className="flex items-center gap-[10px]">
             <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
@@ -56,7 +56,7 @@ function Services() {
             return (
               <div
                 key={index}
-                className="flex items-center justify-center mt-[10px] flex-col px-[20px] py-[80px] border-[2px] md:w-[326px] md:h-[337px] lg:mt-0 lg:w-[295px] xl:w-[374px] xl:h-[255px]"
+                className="flex items-center justify-center mt-[10px] flex-col px-[20px] py-[80px] border-[2px] md:w-[326px] md:h-[337px] lg:mt-0 lg:w-[295px] xl:w-[374px] xl:h-[255px] 2xl:w-[416px] 2xl:h-[337px]"
               >
                 <div className="w-[100%] h-[175px] flex flex-col justify-center items-center md:w-[294px]">
                   <div className="w-[64px] h-[64px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">

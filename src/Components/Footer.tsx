@@ -10,7 +10,7 @@ function Footer() {
     <>
       <div className="bg-[#151515] px-[12px] pt-[60px] pb-[30px] flex justify-center items-center flex-col">
         <img className="w-[65px]" src={logo} alt="" />
-        <p className="text-[#D9E5F0]">Georgia, Batumi</p>
+        <p className="text-[#D9E5F0]">Georgia, Tbilisi</p>
         <div className="mt-[15px]">
           <p className="text-[#D9E5F0] mr-auto font-light">
             <span className="font-bold">Phone:</span> +995 577 22 48 31

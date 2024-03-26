@@ -6,7 +6,7 @@ import linkedin from "../../public/img/social/linkedin.png";
 function Contact() {
   return (
     <div id="contact" className="bg-[white] px-[12px] pb-[50px]">
-      <div className="max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px]">
+      <div className="max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px] xl:max-w-[1180px] 2xl:max-w-[1325px]">
         <div className="bg-[white] pt-[120px]">
           <div className="flex items-center gap-[10px]">
             <h2 className="uppercase text-[#AAAAAA] text-[15px] tracking-[3px]">
@@ -19,7 +19,7 @@ function Contact() {
           </p>
         </div>
         {/* Map */}
-        <div className="max-w-[770px] mt-[40px] lg:max-w-[948px]">
+        <div className="max-w-[770px] mt-[40px] lg:max-w-[948px] xl:max-w-[1674px] 2xl:max-w-[1944px]">
           <iframe
             width="100%"
             height="350px"
