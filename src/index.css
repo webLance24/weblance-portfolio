@@ -14,11 +14,12 @@ body {
   /* background: #1e213f; */
   min-height: 100vh;
   font-family: "Oswald", sans-serif;
-  background-image: url("../src/assets/herobg.jpg");
+  background-image: url("../public/assets/herobg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
 }
 
 /* social media team hover */

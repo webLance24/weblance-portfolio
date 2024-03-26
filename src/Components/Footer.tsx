@@ -1,9 +1,9 @@
-import logo from "../../src/assets/weblance-logo.png";
-import instagram from "../../src/assets/social/instagram-white.png";
-import facebook from "../../src/assets/social/facebook-white.png";
-import linkedin from "../../src/assets/social/linkedin-white.png";
-import github from "../../src/assets/social/github-white.png";
-import copyright from "../../src/assets/copyright.png";
+import logo from "../../public/assets/weblance-logo.png";
+import instagram from "../../public/assets/social/instagram-white.png";
+import facebook from "../../public/assets/social/facebook-white.png";
+import linkedin from "../../public/assets/social/linkedin-white.png";
+import github from "../../public/assets/social/github-white.png";
+import copyright from "../../public/assets/copyright.png";
 
 function Footer() {
   return (

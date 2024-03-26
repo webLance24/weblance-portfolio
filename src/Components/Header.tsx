@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { MyContext } from "./Context";
-import logo from "../../src/assets/weblance-logo.png";
+import logo from "../../public/assets/weblance-logo.png";
 import { Link } from "react-scroll";
 
 interface ComponentsProps {

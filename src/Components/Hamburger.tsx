@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { MyContext } from "./Context";
 import { Link } from "react-scroll";
-import cross from "../../src/assets/icons/cross.png";
+import cross from "../../public/assets/icons/cross.png";
 
 function Hamburger() {
   const context = useContext(MyContext);

@@ -1,4 +1,4 @@
-import imgOne from "../../src/assets/icons/market.png";
+import imgOne from "../../public/assets/icons/market.png";
 
 function Home() {
   const categories = [
