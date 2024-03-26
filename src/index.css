@@ -11,7 +11,7 @@
 }
 
 body {
-  background: #1e213f;
+  /* background: #1e213f; */
   min-height: 100vh;
   font-family: "Oswald", sans-serif;
   background-image: url("../public/assets/herobg.jpg");
