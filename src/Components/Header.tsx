@@ -79,7 +79,7 @@ function Header() {
             to={"home"}
             spy={true}
             smooth={true}
-            offset={50}
+            offset={0}
             duration={500}
             onClick={() => {
               setMenu(false);

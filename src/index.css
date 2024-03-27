@@ -60,6 +60,15 @@ body {
   padding: 16px 32px;
 }
 
+/* placeholder */
+
+.input-placeholder::placeholder {
+  word-wrap: break-word;
+}
+
+input::placeholder {
+}
+
 /* tablet */
 
 @media (min-width: 768px) {
