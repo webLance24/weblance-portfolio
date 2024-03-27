@@ -6,6 +6,9 @@ export default {
       screens: {
         lg: "948px",
       },
+      backgroundImage: {
+        background: "url('/assets/herobg.jpg')",
+      },
     },
   },
   plugins: [],

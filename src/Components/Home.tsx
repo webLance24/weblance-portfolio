@@ -13,7 +13,15 @@ function Home() {
     // here is home page
     <div
       id="home"
-      className="pt-[100px] pb-[100px] md:pb-[130px] lg:pb-[190px] lg:pt-[220px] px-[12px] bg-[black] bg-opacity-60"
+      className="pt-[100px] pb-[100px] md:pb-[130px] lg:pb-[190px] lg:pt-[220px] px-[12px]"
+      style={{
+        backgroundImage: `url('/assets/herobg.jpg')`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundColor: "rgba(0, 0, 0, 0.9)", // Adjust alpha value for opacity
+      }}
     >
       <div className="md:w-[696px] md:m-auto">
         <h1 className="text-[white] text-[40px] font-bold text-center md:text-[56px]">

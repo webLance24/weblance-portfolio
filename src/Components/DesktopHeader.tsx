@@ -28,6 +28,7 @@ function DesktopHeader() {
           const categoryId = category.toLowerCase().replace(/\s+/g, "-");
           return (
             <Link
+              key={categoryId}
               to={categoryId}
               spy={true}
               smooth={true}
