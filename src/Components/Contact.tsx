@@ -2,10 +2,27 @@ import location from "../../public/assets/icons/location.png";
 import mobile from "../../public/assets/icons/mobile.png";
 import instagram from "../../public/assets/social/instagram.png";
 import linkedin from "../../public/assets/social/linkedin.png";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { MyContext } from "./Context";
 
 function Contact() {
+  const context = useContext(MyContext);
+  const { done, setDone, inputValue, setInpuitValue, error, setError }: any =
+    context;
+
+  // const regex = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
+  const regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+
+  function emailError() {
+    if (regex.test(form.current?.value ? form.current?.value : "")) {
+      setError(false);
+      setDone(true);
+    } else {
+      setError(true);
+    }
+  }
+
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -55,10 +72,10 @@ function Contact() {
           </iframe>
         </div>
         {/* contact info, number, social network and others */}
-        <div className="flex flex-col md:flex-row md:justify-between">
+        <div className="flex flex-col lg:flex-row lg:justify-between">
           {/* location */}
           <div>
-            <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px]">
+            <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px] md:mt-[40px]">
               <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
                 <img className="w-[22px] h-[22px]" src={location} alt="" />
               </div>
@@ -132,19 +149,19 @@ function Contact() {
                 className="flex flex-col justify-start mt-[40px] gap-[20px] ml-auto max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px] xl:max-w-[1180px] 2xl:max-w-[1325px]"
               >
                 {/* for style lg responsive */}
-                <div className="flex flex-col gap-[20px] md:flex-row">
+                <div className="flex flex-col gap-[20px] lg:flex-row">
                   <input
                     type="text"
                     placeholder="Full Name"
                     name="user_name"
-                    className="bg-[white] border-[1px] border-[#FFC451] outline-none text-black py-2 px-4 rounded"
+                    className="custom-textarea bg-[white] border-[1px] border-[#FFC451] outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded lg:w-[296px] xl:w-[355px] 2xl:w-[416px]"
                     required
                   />
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="Your Email"
                     name="user_email"
-                    className="bg-[white] border-[1px] border-[#FFC451] outline-none text-black py-2 px-4 rounded"
+                    className="custom-textarea bg-[white] border-[1px] border-[#FFC451] outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded lg:w-[296px] xl:w-[355px] 2xl:w-[416px]"
                     required
                   />
                 </div>
@@ -152,7 +169,7 @@ function Contact() {
                   type="text"
                   placeholder="Subject"
                   name="subject"
-                  className="bg-[white] border-[1px] border-[#FFC451] outline-none text-black py-2 px-4 rounded"
+                  className="custom-textarea bg-[white] border-[1px] border-[#FFC451] outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded"
                   required
                 />
                 <textarea
@@ -160,11 +177,11 @@ function Contact() {
                   placeholder="Type your message here..."
                   cols={22}
                   rows={5}
-                  className="bg-[white] border-[1px] border-[#FFC451] outline-none text-black py-2 px-4 rounded"
+                  className="custom-textarea bg-[white] border-[1px] border-[#FFC451] outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded"
                 ></textarea>
                 <button
                   type="submit"
-                  className="bg-[#FFC451] border-[1px] border-[#FFC451] outline-none text-black py-[10px] px-[24px] h-[44px] w-[154px] rounded"
+                  className="bg-[#FFC451] flex justify-center items-center border-[1px] hover:bg-[#ffc5515c] duration-300 ease-in-out outline-none text-black h-[44px] w-[154px] rounded"
                 >
                   Send Message
                 </button>

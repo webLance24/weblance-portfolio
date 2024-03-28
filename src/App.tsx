@@ -17,6 +17,9 @@ function App() {
   const [selected, setSelected] = useState<string>("Home");
   const [categorie, setCategorie] = useState<string>("ALL");
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [inputValue, setInputValue] = useState<string>("");
+  const [done, setDone] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
 
   return (
     <>
@@ -32,6 +35,12 @@ function App() {
           setCategorie,
           scrolled,
           setScrolled,
+          inputValue,
+          setInputValue,
+          done,
+          setDone,
+          error,
+          setError,
         }}
       >
         <Header />

@@ -60,13 +60,36 @@ body {
   padding: 16px 32px;
 }
 
-/* placeholder */
-
-.input-placeholder::placeholder {
-  word-wrap: break-word;
+/* scrollbar for input */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-input::placeholder {
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc451;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fad07b;
+}
+
+.custom-textarea::placeholder {
+  color: #444444; /* Adjust placeholder text color */
+  font-weight: 300;
+}
+
+.custom-textarea {
+  caret-color: #ffc451;
 }
 
 /* tablet */
