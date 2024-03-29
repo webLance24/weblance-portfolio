@@ -15,8 +15,8 @@ interface ComponentsProps {
   setInputValue: (inputValue: string) => void;
   done: boolean;
   setDone: (done: boolean) => void;
-  error: boolean;
-  setError: (error: boolean) => void;
+  inputError: string;
+  setInputError: (error: string) => void;
 }
 
 export const MyContext = createContext<ComponentsProps | null>(null);

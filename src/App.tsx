@@ -19,7 +19,7 @@ function App() {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [inputValue, setInputValue] = useState<string>("");
   const [done, setDone] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>(false);
+  const [inputError, setInputError] = useState<string>("");
 
   return (
     <>
@@ -39,8 +39,8 @@ function App() {
           setInputValue,
           done,
           setDone,
-          error,
-          setError,
+          inputError,
+          setInputError,
         }}
       >
         <Header />

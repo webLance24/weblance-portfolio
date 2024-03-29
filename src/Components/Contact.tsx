@@ -2,26 +2,50 @@ import location from "../../public/assets/icons/location.png";
 import mobile from "../../public/assets/icons/mobile.png";
 import instagram from "../../public/assets/social/instagram.png";
 import linkedin from "../../public/assets/social/linkedin.png";
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { MyContext } from "./Context";
+import { useForm } from "react-hook-form";
 
 function Contact() {
-  const context = useContext(MyContext);
-  const { done, setDone, inputValue, setInpuitValue, error, setError }: any =
-    context;
+  // const context = useContext(MyContext);
+  // const { done, setDone, inputValue, setInpuitValue, error, setError }: any =
+  //   context;
 
   // const regex = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
-  const regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+  // const regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
 
-  function emailError() {
-    if (regex.test(form.current?.value ? form.current?.value : "")) {
-      setError(false);
-      setDone(true);
+  const context = useContext(MyContext);
+  const { inputError, setInputError }: any = context;
+
+  // type LoginFormValues = {
+  //   email: string;
+  //   password: string;
+  // };
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      userName: "",
+    },
+  });
+
+  const handleButtonClick = () => {
+    const inputValue = (
+      document.querySelector('input[name="userName"]') as HTMLInputElement
+    )?.value.trim(); // Typecasting to HTMLInputElement
+    if (!inputValue) {
+      setInputError("Please enter your name");
+    } else if (inputValue.length < 4) {
+      setInputError("Minimum length is 4 characters");
     } else {
-      setError(true);
+      setInputError("");
+      form.current?.submit();
     }
-  }
+  };
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -145,7 +169,9 @@ function Contact() {
             <div>
               <form
                 ref={form}
-                onSubmit={sendEmail}
+                onSubmit={handleSubmit((data) => {
+                  console.log(data);
+                })}
                 className="flex flex-col justify-start mt-[40px] gap-[20px] ml-auto max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px] xl:max-w-[1180px] 2xl:max-w-[1325px]"
               >
                 {/* for style lg responsive */}
@@ -153,10 +179,17 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    name="user_name"
+                    {...register("userName", {
+                      required: "This is required",
+                      minLength: {
+                        value: 4,
+                        message: "Minimum length is 4 characters",
+                      },
+                    })}
                     className="custom-textarea bg-[white] border-[1px] border-[#FFC451] outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded lg:w-[296px] xl:w-[355px] 2xl:w-[416px]"
                     required
                   />
+                  {inputError && <p className="text-red-500">{inputError}</p>}
                   <input
                     type="email"
                     placeholder="Your Email"
@@ -182,6 +215,7 @@ function Contact() {
                 <button
                   type="submit"
                   className="bg-[#FFC451] flex justify-center items-center border-[1px] hover:bg-[#ffc5515c] duration-300 ease-in-out outline-none text-black h-[44px] w-[154px] rounded"
+                  onClick={handleButtonClick}
                 >
                   Send Message
                 </button>
