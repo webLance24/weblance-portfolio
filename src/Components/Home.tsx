@@ -1,13 +1,13 @@
-import imgOne from "../../public/assets/icons/market.png";
+// import imgOne from "../../public/assets/icons/market.png";
 
 function Home() {
-  const categories = [
-    { title: "Lorem Ipsum", src: imgOne },
-    { title: "Lorem Ipsum", src: imgOne },
-    { title: "Lorem Ipsum", src: imgOne },
-    { title: "Lorem Ipsum", src: imgOne },
-    { title: "Lorem Ipsum", src: imgOne },
-  ];
+  //   const categories = [
+  //     { title: "Lorem Ipsum", src: imgOne },
+  //     { title: "Lorem Ipsum", src: imgOne },
+  //     { title: "Lorem Ipsum", src: imgOne },
+  //     { title: "Lorem Ipsum", src: imgOne },
+  //     { title: "Lorem Ipsum", src: imgOne },
+  //   ];
 
   return (
     // here is home page
@@ -21,12 +21,12 @@ function Home() {
         </h1>
       </div>
       <p className="text-[white] text-[20px] font-light text-center md:text-[24px]">
-        We are team of talented digital developerss
+        We are team of talented digital developers
       </p>
       {/* Containers section */}
       <div className="flex justify-center items-center flex-col m-auto gap-[20px] mt-[40px] max-w-[520px] md:flex-wrap md:flex-row md:max-w-[1024px] md:pb-[50px] 2xl:max-w-[1536px]">
         {/* div where mapped all categories element */}
-        {categories.map((category, index) => {
+        {/* {categories.map((category, index) => {
           return (
             <div
               key={index}
@@ -40,10 +40,9 @@ function Home() {
               <h3 className="text-[20px] text-[white]">{category.title}</h3>
             </div>
           );
-        })}
+        })} */}
       </div>
     </div>
   );
 }
-
 export default Home;

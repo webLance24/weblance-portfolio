@@ -1,38 +1,47 @@
-import design from "../../public/assets/icons/design.png";
+import uiux from "../../public/assets/icons/design.png";
 import front from "../../public/assets/icons/front.png";
 import back from "../../public/assets/icons/back.png";
+import media from "../../public/assets/icons/media.png";
+import photo from "../../public/assets/icons/photo.png";
+import video from "../../public/assets/icons/video.png";
 
 function Services() {
   const categories = [
     {
-      title: "Design",
-      category: "lorem ipsum ipsum lorem lorem ipsum ipsum lorem",
-      src: design,
-    },
-    {
       title: "Front-end",
-      category: " lorem ipsum ipsum lorem lorem ipsum ipsum lorem",
+      category:
+        "Enhance your website's look and feel with our expert front-end development services.",
       src: front,
     },
     {
       title: " Back-end",
-      category: "lorem ipsum ipsum lorem lorem ipsum ipsum lorem",
+      category:
+        "Power up your website's functionality with our back-end development expertise.",
       src: back,
     },
     {
-      title: "Back-end",
-      category: "lorem ipsum ipsum lorem lorem ipsum ipsum lorem",
-      src: back,
+      title: "UI/UX",
+      category:
+        "Elevate your website's user experience with our expert UI/UX design services.",
+      src: uiux,
     },
     {
-      title: "Back-end",
-      category: "lorem ipsum ipsum lorem lorem ipsum ipsum lorem",
-      src: back,
+      title: "Social Media Marketing",
+      category:
+        "Boost your brand's visibility, We're helping you connect with your target audience.",
+      src: media,
     },
     {
-      title: "Back-end",
-      category: "lorem ipsum ipsum lorem lorem ipsum ipsum lorem",
-      src: back,
+      title: "Photography",
+      category:
+        "Capture the essence of your brand with our photography services.",
+      src: photo,
+    },
+    {
+      title: "Videography",
+      category:
+        "Our videography capture the essence of your brand, products, and services.",
+      src: video,
     },
   ];
 

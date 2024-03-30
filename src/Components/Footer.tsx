@@ -21,7 +21,7 @@ function Footer() {
           <p className="text-[#D9E5F0] font-light">
             <span className="font-bold">Email:</span>{" "}
             <a href="mailto:weblance17@gmail.com" target="_blank">
-              weblance17@gmail.com
+              weblance1724@gmail.com
             </a>
           </p>
         </div>

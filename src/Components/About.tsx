@@ -16,14 +16,16 @@ function About() {
         {/* text section */}
         <div className="lg:flex lg:flex-col xl:w-[546px] 2xl:w-[636px]">
           <h3 className="text-[#444444] text-[28px] font-bold mt-[24px] lg:mt-0">
-            Lorem ipsum is placeholder text commonly used in the graphic, print,
-            and publishing LOREM IPSUM GENERATOR
+            WebLance, based in Tbilisi, Georgia, was founded by David Mikeladze
+            and Giorgi Mamulashvili.
           </h3>
           <p className="text-[16px] font-normal text-[#444444] mt-[20px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Our goal is simple: to combine creativity and technology to create
+            unique digital solutions that help businesses succeed online. At
+            WebLance, our talented team of developers, designers, and digital
+            strategists is dedicated to crafting powerful websites and
+            e-commerce platforms. We focus on transparency, teamwork, and
+            delivering on time to guarantee success in every project we take on.
           </p>
         </div>
       </div>

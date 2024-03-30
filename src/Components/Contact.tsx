@@ -1,8 +1,8 @@
 import location from "../../public/assets/icons/location.png";
 import mobile from "../../public/assets/icons/mobile.png";
-import instagram from "../../public/assets/social/instagram.png";
+import gmail from "../../public/assets/icons/gmail.png";
 import linkedin from "../../public/assets/social/linkedin.png";
-import { useContext, useRef, useState } from "react";
+import { useContext, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { MyContext } from "./Context";
 import { useForm } from "react-hook-form";
@@ -33,19 +33,21 @@ function Contact() {
     },
   });
 
-  const handleButtonClick = () => {
-    const inputValue = (
-      document.querySelector('input[name="userName"]') as HTMLInputElement
-    )?.value.trim(); // Typecasting to HTMLInputElement
-    if (!inputValue) {
-      setInputError("Please enter your name");
-    } else if (inputValue.length < 4) {
-      setInputError("Minimum length is 4 characters");
-    } else {
-      setInputError("");
-      form.current?.submit();
-    }
-  };
+  // const handleButtonClick = () => {
+  //   const inputValue = (
+  //     document.querySelector('input[name="userName"]') as HTMLInputElement
+  //   )?.value.trim(); // Typecasting to HTMLInputElement
+  //   if (!inputValue) {
+  //     setInputError("Please enter your name");
+  //   } else if (inputValue.length < 4) {
+  //     setInputError("Minimum length is 4 characters");
+  //   } else if (inputValue.length > 6) {
+  //     setInputError("Maximum length is 4 characters");
+  //   } else {
+  //     setInputError("");
+  //     form.current?.submit();
+  //   }
+  // };
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -90,7 +92,7 @@ function Contact() {
           <iframe
             width="100%"
             height="350px"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=15%20Leonidze%20St,%20Batumi%206004+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Mikheil%20Zandukeli%2036&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           >
             <a href="https://www.gps.ie/">gps vehicle tracker</a>
           </iframe>
@@ -147,18 +149,16 @@ function Contact() {
                 </a>
               </div>
             </div>
-            {/* instagram */}
+            {/* gmail */}
             <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[30px]">
               <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
-                <img className="w-[22px] h-[22px]" src={instagram} alt="" />
+                <img className="w-[22px] h-[22px]" src={gmail} alt="" />
               </div>
               <div>
-                <h4 className="text-[black] text-[22px] font-normal">
-                  Instagram:
-                </h4>
-                <a href="https://www.instagram.com/weblance17/" target="_blank">
+                <h4 className="text-[black] text-[22px] font-normal">Gmail:</h4>
+                <a href="https://mail.google.com/" target="_blank">
                   <p className="text-[#444444] text-[14px] font-normal">
-                    weblance17
+                    weblance1724@gmail.com
                   </p>
                 </a>
               </div>
@@ -179,14 +179,10 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    {...register("userName", {
-                      required: "This is required",
-                      minLength: {
-                        value: 4,
-                        message: "Minimum length is 4 characters",
-                      },
-                    })}
-                    className="custom-textarea bg-[white] border-[1px] border-[#FFC451] outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded lg:w-[296px] xl:w-[355px] 2xl:w-[416px]"
+                    {...register("userName")}
+                    className={`custom-textarea bg-[white] border-[1px] ${
+                      inputError ? "border-[red]" : "border-[#FFC451]"
+                    } outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded lg:w-[296px] xl:w-[355px] 2xl:w-[416px]`}
                     required
                   />
                   {inputError && <p className="text-red-500">{inputError}</p>}
@@ -215,7 +211,6 @@ function Contact() {
                 <button
                   type="submit"
                   className="bg-[#FFC451] flex justify-center items-center border-[1px] hover:bg-[#ffc5515c] duration-300 ease-in-out outline-none text-black h-[44px] w-[154px] rounded"
-                  onClick={handleButtonClick}
                 >
                   Send Message
                 </button>
