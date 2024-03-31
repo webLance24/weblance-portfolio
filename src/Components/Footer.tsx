@@ -7,6 +7,7 @@ import copyright from "../../public/assets/copyright.png";
 
 function Footer() {
   return (
+    // footer section
     <>
       <div className="bg-[#151515] px-[12px] pt-[60px] pb-[30px] flex justify-center items-center flex-col">
         <img className="w-[65px]" src={logo} alt="" />
