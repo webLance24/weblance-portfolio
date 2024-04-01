@@ -2,12 +2,55 @@ import location from "../../public/assets/icons/location.png";
 import mobile from "../../public/assets/icons/mobile.png";
 import gmail from "../../public/assets/icons/gmail.png";
 import linkedin from "../../public/assets/social/linkedin.png";
-import { useContext, useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { MyContext } from "./Context";
-import { useForm } from "react-hook-form";
 
 function Contact() {
+  const categories = [
+    {
+      title: "Location:",
+      info: "Georgia, Tbilisi",
+      src: location,
+    },
+    {
+      title: "Mobile:",
+      info: "+995 599 00 09 90",
+      src: mobile,
+      link: "tel:+995599000990",
+    },
+    {
+      title: "Linkedin:",
+      info: "@webLance",
+      src: linkedin,
+      link: "https://www.linkedin.com/in/web-lance-74496a2b4/",
+    },
+    {
+      title: "Gmail:",
+      info: "weblance1724@gmail.com",
+      src: gmail,
+      gmail: "https://mail.google.com/",
+    },
+  ];
+  // const [values, setValues] = useState({
+  //   fullName: "",
+  //   email: "",
+  //   subject: "",
+  //   text: "",
+  // });
+
+  // const [errors, setErrors] = useState({});
+
+  // function handleInput(event) {
+  //   const { name, value } = event.target; // Destructure name and value from event target
+  //   setValues({ ...values, [name]: value }); // Update the specific field in the values object
+  // }
+
+  // function handleValidation(event) {
+  //   event.preventDefault();
+  //   const validationErrors = Validation(values); // Get validation errors
+  //   setErrors(validationErrors); // Set validation errors
+  // }
+
   // const context = useContext(MyContext);
   // const { done, setDone, inputValue, setInpuitValue, error, setError }: any =
   //   context;
@@ -15,23 +58,23 @@ function Contact() {
   // const regex = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
   // const regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
 
-  const context = useContext(MyContext);
-  const { inputError, setInputError }: any = context;
+  // const context = useContext(MyContext);
+  // const { inputError, setInputError }: any = context;
 
   // type LoginFormValues = {
   //   email: string;
   //   password: string;
   // };
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
-    defaultValues: {
-      userName: "",
-    },
-  });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm({
+  //   defaultValues: {
+  //     userName: "",
+  //   },
+  // });
 
   // const handleButtonClick = () => {
   //   const inputValue = (
@@ -101,77 +144,37 @@ function Contact() {
         <div className="flex flex-col lg:flex-row lg:justify-between">
           {/* location */}
           <div>
-            <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px] md:mt-[40px]">
-              <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
-                <img className="w-[22px] h-[22px]" src={location} alt="" />
-              </div>
-              <div>
-                <h4 className="text-[black] text-[22px] font-normal">
-                  Location:
-                </h4>
-                <p className="text-[#444444] text-[14px] font-normal">
-                  Georgia, Tbilisi
-                </p>
-              </div>
-            </div>
-            {/* mobile */}
-            <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[30px]">
-              <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
-                <img className="w-[22px] h-[22px]" src={mobile} alt="" />
-              </div>
-              <div>
-                <h4 className="text-[black] text-[22px] font-normal">
-                  Mobile:
-                </h4>
-                <p className="text-[#444444] text-[14px] font-normal">
-                  <a href="tel:+995599000990" target="_blank">
-                    +995 599 00 09 90
-                  </a>
-                </p>
-              </div>
-            </div>
-            {/* linkedin */}
-            <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[30px]">
-              <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
-                <img className="w-[22px] h-[22px]" src={linkedin} alt="" />
-              </div>
-              <div>
-                <h4 className="text-[black] text-[22px] font-normal">
-                  Linkedin:
-                </h4>
-                <a
-                  href="https://www.linkedin.com/in/web-lance-74496a2b4/"
-                  target="_blank"
+            {categories.map((category, index) => {
+              return (
+                <div
+                  key={index}
+                  className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px] md:mt-[40px]"
                 >
-                  <p className="text-[#444444] text-[14px] font-normal">
-                    @webLance
-                  </p>
-                </a>
-              </div>
-            </div>
-            {/* gmail */}
-            <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[30px]">
-              <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
-                <img className="w-[22px] h-[22px]" src={gmail} alt="" />
-              </div>
-              <div>
-                <h4 className="text-[black] text-[22px] font-normal">Gmail:</h4>
-                <a href="https://mail.google.com/" target="_blank">
-                  <p className="text-[#444444] text-[14px] font-normal">
-                    weblance1724@gmail.com
-                  </p>
-                </a>
-              </div>
-            </div>
+                  <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
+                    <img
+                      className="w-[22px] h-[22px]"
+                      src={category.src}
+                      alt="all images from categories array"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-[black] text-[22px] font-normal">
+                      {category.title}
+                    </h4>
+                    <p className="text-[#444444] text-[14px] font-normal">
+                      {category.info}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
           {/* gmail sand message inputs */}
           <section className="">
             <div>
               <form
                 ref={form}
-                onSubmit={handleSubmit((data) => {
-                  console.log(data);
-                })}
+                onSubmit={sendEmail}
                 className="flex flex-col justify-start mt-[40px] gap-[20px] ml-auto max-w-[520px] m-auto md:max-w-[696px] lg:max-w-[948px] xl:max-w-[1180px] 2xl:max-w-[1325px]"
               >
                 {/* for style lg responsive */}
@@ -179,13 +182,10 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    {...register("userName")}
-                    className={`custom-textarea bg-[white] border-[1px] ${
-                      inputError ? "border-[red]" : "border-[#FFC451]"
-                    } outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded lg:w-[296px] xl:w-[355px] 2xl:w-[416px]`}
+                    name="full_name"
+                    className="custom-textarea bg-[white] border-[1px] border-[#FFC451] outline-none text-black font-light py-2 px-4 hover:border-[#ffc5519b] rounded lg:w-[296px] xl:w-[355px] 2xl:w-[416px]"
                     required
                   />
-                  {inputError && <p className="text-red-500">{inputError}</p>}
                   <input
                     type="email"
                     placeholder="Your Email"
