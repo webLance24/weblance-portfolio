@@ -5,23 +5,33 @@
       "images": [
         {
           "title": "Front-end 1",
-          "src": "./assets/portfolio/calc.png"
+          "src": "./assets/portfolio/calc.png",
+          "github": "https://github.com/Davmike/Calculator-app",
+          "live": "https://davmike.github.io/Calculator-app/"
         },
         {
           "title": "Front-end 2",
-          "src": "./assets/portfolio/advice.png"
+          "src": "./assets/portfolio/advice.png",
+          "github": "https://github.com/Davmike/Advice-generator-app",
+          "live": "https://davmike.github.io/Advice-generator-app/"
         },
         {
           "title": "Front-end 3",
-          "src": "./assets/portfolio/github.png"
+          "src": "./assets/portfolio/github.png",
+          "github": "https://github.com/Davmike/github-user-search-app",
+          "live": "https://github-user-search-app-brown.vercel.app/"
         },
         {
           "title": "Front-end 4",
-          "src": "./assets/portfolio/password.png"
+          "src": "./assets/portfolio/password.png",
+          "github": "https://github.com/Davmike/password-generator-app",
+          "live": "https://davmike.github.io/password-generator-app/"
         },
         {
           "title": "Front-end 5",
-          "src": "./assets/portfolio/tip-calc.png"
+          "src": "./assets/portfolio/tip-calc.png",
+          "github": "https://github.com/Davmike/Tip-Calculator",
+          "live": "https://davmike.github.io/Tip-Calculator/"
         }
       ]
     },
@@ -30,15 +40,21 @@
       "images": [
         {
           "title": "Back-end 1",
-          "src": "./assets/portfolio/link.png"
+          "src": "./assets/portfolio/link.png",
+          "github": "https://github.com/Davmike/link-sharing-app",
+          "live": "https://davmike.github.io/link-sharing-app/"
         },
         {
           "title": "Back-end 2",
-          "src": "./assets/portfolio/movie.png"
+          "src": "./assets/portfolio/movie.png",
+          "github": "https://github.com/Davmike/entertainment-web-app",
+          "live": "https://entertainment-web-app-five-theta.vercel.app/"
         },
         {
           "title": "Back-end 3",
-          "src": "./assets/portfolio/redberry.png"
+          "src": "./assets/portfolio/redberry.png",
+          "github": "https://github.com/Davmike/redberry-website-geleck",
+          "live": "redberry-website-geleck.vercel.app"
         }
       ]
     },
@@ -47,19 +63,27 @@
       "images": [
         {
           "title": "Design 1",
-          "src": "./assets/portfolio/planet.png"
+          "src": "./assets/portfolio/planet.png",
+          "github": "https://github.com/Davmike/planets-fact-site",
+          "live": "planets-fact-site-weld.vercel.app"
         },
         {
           "title": "Design 2",
-          "src": "./assets/portfolio/pomodoro.png"
+          "src": "./assets/portfolio/pomodoro.png",
+          "github": "https://github.com/Davmike/pomodoro-app",
+          "live": "pomodoro-app-coral-nine.vercel.app"
         },
         {
           "title": "Design 3",
-          "src": "./assets/portfolio/rating.png"
+          "src": "./assets/portfolio/rating.png",
+          "github": "https://github.com/Davmike/interactive-rating-component",
+          "live": "https://interactive-rating-component-six-rho.vercel.app/"
         },
         {
           "title": "Design 4",
-          "src": "./assets/portfolio/todo.png"
+          "src": "./assets/portfolio/todo.png",
+          "github": "https://github.com/Davmike/todo-app",
+          "live": "todo-app-nine-cyan-29.vercel.app"
         }
       ]
     }
