@@ -5,15 +5,23 @@
       "images": [
         {
           "title": "Front-end 1",
-          "src": "./assets/portfolio/front-4.jpg"
+          "src": "./assets/portfolio/calc.png"
         },
         {
           "title": "Front-end 2",
-          "src": "./assets/portfolio/front-4.jpg"
+          "src": "./assets/portfolio/advice.png"
         },
         {
           "title": "Front-end 3",
-          "src": "./assets/portfolio/front-4.jpg"
+          "src": "./assets/portfolio/github.png"
+        },
+        {
+          "title": "Front-end 4",
+          "src": "./assets/portfolio/password.png"
+        },
+        {
+          "title": "Front-end 5",
+          "src": "./assets/portfolio/tip-calc.png"
         }
       ]
     },
@@ -22,15 +30,15 @@
       "images": [
         {
           "title": "Back-end 1",
-          "src": "./assets/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/link.png"
         },
         {
           "title": "Back-end 2",
-          "src": "./assets/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/movie.png"
         },
         {
           "title": "Back-end 3",
-          "src": "./assets/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/redberry.png"
         }
       ]
     },
@@ -39,15 +47,19 @@
       "images": [
         {
           "title": "Design 1",
-          "src": "./assets/portfolio/front-2.jpg"
+          "src": "./assets/portfolio/planet.png"
         },
         {
           "title": "Design 2",
-          "src": "./assets/portfolio/front-3.jpg"
+          "src": "./assets/portfolio/pomodoro.png"
         },
         {
           "title": "Design 3",
-          "src": "./assets/portfolio/front-3.jpg"
+          "src": "./assets/portfolio/rating.png"
+        },
+        {
+          "title": "Design 4",
+          "src": "./assets/portfolio/todo.png"
         }
       ]
     }
