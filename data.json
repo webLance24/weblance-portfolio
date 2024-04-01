@@ -54,7 +54,7 @@
           "title": "Back-end 3",
           "src": "./assets/portfolio/redberry.png",
           "github": "https://github.com/Davmike/redberry-website-geleck",
-          "live": "redberry-website-geleck.vercel.app"
+          "live": "https://redberry-website-geleck.vercel.app/"
         }
       ]
     },
@@ -65,13 +65,13 @@
           "title": "Design 1",
           "src": "./assets/portfolio/planet.png",
           "github": "https://github.com/Davmike/planets-fact-site",
-          "live": "planets-fact-site-weld.vercel.app"
+          "live": "https://planets-fact-site-weld.vercel.app/Earth"
         },
         {
           "title": "Design 2",
           "src": "./assets/portfolio/pomodoro.png",
           "github": "https://github.com/Davmike/pomodoro-app",
-          "live": "pomodoro-app-coral-nine.vercel.app"
+          "live": "https://pomodoro-app-coral-nine.vercel.app/"
         },
         {
           "title": "Design 3",
@@ -83,7 +83,7 @@
           "title": "Design 4",
           "src": "./assets/portfolio/todo.png",
           "github": "https://github.com/Davmike/todo-app",
-          "live": "todo-app-nine-cyan-29.vercel.app"
+          "live": "https://todo-app-nine-cyan-29.vercel.app/"
         }
       ]
     }
