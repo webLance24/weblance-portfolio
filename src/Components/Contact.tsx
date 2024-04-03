@@ -28,7 +28,7 @@ function Contact() {
       title: "Gmail:",
       info: "weblance1724@gmail.com",
       src: gmail,
-      gmail: "https://mail.google.com/",
+      link: "https://mail.google.com/",
     },
   ];
   // const [values, setValues] = useState({
@@ -146,26 +146,28 @@ function Contact() {
           <div>
             {categories.map((category, index) => {
               return (
-                <div
-                  key={index}
-                  className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px] md:mt-[40px]"
-                >
-                  <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
-                    <img
-                      className="w-[22px] h-[22px]"
-                      src={category.src}
-                      alt="all images from categories array"
-                    />
+                <a href={category.link} target="_blank" className="pointer">
+                  <div
+                    key={index}
+                    className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px] md:mt-[40px]"
+                  >
+                    <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
+                      <img
+                        className="w-[22px] h-[22px]"
+                        src={category.src}
+                        alt="all images from categories array"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-[black] text-[22px] font-normal">
+                        {category.title}
+                      </h4>
+                      <p className="text-[#444444] text-[14px] font-normal">
+                        {category.info}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-[black] text-[22px] font-normal">
-                      {category.title}
-                    </h4>
-                    <p className="text-[#444444] text-[14px] font-normal">
-                      {category.info}
-                    </p>
-                  </div>
-                </div>
+                </a>
               );
             })}
           </div>
