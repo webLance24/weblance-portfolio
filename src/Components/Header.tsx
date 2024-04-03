@@ -47,8 +47,15 @@ const StyledBurger = ({
 
 function Header() {
   const context = useContext(MyContext);
-  const { hidden, setHidden, menu, setMenu, setScrolled, scrolled }: any =
-    context;
+  const {
+    hidden,
+    setHidden,
+    menu,
+    setMenu,
+    setScrolled,
+    scrolled,
+    setSelected,
+  }: any = context;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,6 +91,7 @@ function Header() {
             onClick={() => {
               setMenu(false);
               setHidden(false);
+              setSelected("Home");
             }}
           >
             <button className="text-[white] w-[118px] h-[40px] outline-none border-[#FFC451] hover:bg-[#FFC451] duration-300 ease-in-out font-normal border-[2px] rounded-[5px] mr-[15px] pt-[6px] pl-[24px] pr-[20px] pb-[7px]">

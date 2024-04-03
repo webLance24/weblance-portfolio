@@ -55,7 +55,6 @@ function Hamburger() {
                         onClick={() => {
                           setMenu(false);
                           setHidden(false);
-                          setSelected("Home");
                         }}
                       >
                         <li

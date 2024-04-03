@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { MyContext } from "./Context";
 import logo from "../../public/assets/weblance-logo.png";
 import { Link } from "react-scroll";
+import Scrollspy from "react-scrollspy";
 
 function DesktopHeader() {
   const context = useContext(MyContext);
@@ -15,6 +16,14 @@ function DesktopHeader() {
     "Team",
     "Contact",
   ];
+
+  <Scrollspy
+    items={buttonCategories.map((category) =>
+      category.toLowerCase().replace(/\s+/g, "-")
+    )}
+    currentClassName="active"
+    offset={-100}
+  ></Scrollspy>;
 
   return (
     <header

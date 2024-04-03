@@ -1,5 +1,5 @@
 import aboutImg from "../../public/assets/about.jpg";
-import boo from "../../public/assets/icons/boo.png";
+// import boo from "../../public/assets/icons/boo.png";
 
 function About() {
   return (
@@ -29,15 +29,15 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="py-[24px] mt-[36px] max-w-[520px] md:max-w-[696px] lg:flex lg:flex-row lg:max-w-[948px] lg:gap-[30px] xl:max-w-[1280px] 2xl:max-w-[1536px]">
-        {/* first container */}
-        <img
+      {/* <div className="py-[24px] mt-[36px] max-w-[520px] md:max-w-[696px] lg:flex lg:flex-row lg:max-w-[948px] lg:gap-[30px] xl:max-w-[1280px] 2xl:max-w-[1536px]"> */}
+      {/* first container */}
+      {/* <img
           className="h-auto md:w-[696px] lg:w-[456px] xl:w-[546px] 2xl:w-[636px]"
           src={aboutImg}
           alt=""
-        />
-        {/* for all container */}
-        <div className="mt-[40px] lg:mt-0 lg:flex lg:flex-col 2xl:w-[636px]">
+        /> */}
+      {/* for all container */}
+      {/* <div className="mt-[40px] lg:mt-0 lg:flex lg:flex-col 2xl:w-[636px]">
           <div className="flex">
             <img src={boo} alt="" className="w-[70px] h-[100%]" />
             <div>
@@ -49,9 +49,9 @@ function About() {
                 Lorem ipsum Lorem ipsum
               </p>
             </div>
-          </div>
-          {/* second container */}
-          <div className="flex mt-[48px]">
+          </div> */}
+      {/* second container */}
+      {/* <div className="flex mt-[48px]">
             <img src={boo} alt="" className="w-[70px] h-[100%]" />
             <div>
               <h4 className="text-[20px] font-bold text-[#464646]">
@@ -62,9 +62,9 @@ function About() {
                 Lorem ipsum Lorem ipsum
               </p>
             </div>
-          </div>
-          {/* third container */}
-          <div className="flex mt-[48px]">
+          </div> */}
+      {/* third container */}
+      {/* <div className="flex mt-[48px]">
             <img src={boo} alt="" className="w-[70px] h-[100%]" />
             <div>
               <h4 className="text-[20px] font-bold text-[#464646]">
@@ -75,9 +75,8 @@ function About() {
                 Lorem ipsum Lorem ipsum
               </p>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> */}
+      {/* </div> */}
     </div>
   );
 }
