@@ -13,6 +13,10 @@ function Team() {
       insta: instagramIcon,
       github: githubIcon,
       linkedin: linkedinIcon,
+      instagramlink: "https://www.instagram.com/giorgi_mamulashvil1/",
+      githublink: "https://github.com/gmamulashvili10",
+      linkedinlink:
+        "https://www.linkedin.com/in/giorgi-mamulashvili-0a7883261/",
     },
     {
       name: "David Mikeladze",
@@ -21,6 +25,9 @@ function Team() {
       insta: instagramIcon,
       github: githubIcon,
       linkedin: linkedinIcon,
+      instagramlink: "https://www.instagram.com/davmikeladze/",
+      githublink: "https://github.com/Davmike",
+      linkedinlink: "https://www.linkedin.com/in/david-mikeladze-927406264/",
     },
   ];
 
@@ -56,10 +63,7 @@ function Team() {
                 <div className="overlay flex gap-[15px] absolute bottom-[30px] opacity-0 hover:opacity-100 transition-opacity duration-300">
                   {/* instagram section */}
                   <div>
-                    <a
-                      href="https://www.instagram.com/giorgi_mamulashvil1/"
-                      target="_blank"
-                    >
+                    <a href={category.instagramlink} target="_blank">
                       <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer md:w-[45px] md:h-[45px]">
                         <img
                           src={category.insta}
@@ -71,10 +75,7 @@ function Team() {
                   </div>
                   {/* github section */}
                   <div>
-                    <a
-                      href="https://github.com/gmamulashvili10"
-                      target="_blank"
-                    >
+                    <a href={category.githublink} target="_blank">
                       <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer md:w-[45px] md:h-[45px]">
                         <img
                           src={category.github}
@@ -86,15 +87,12 @@ function Team() {
                   </div>
                   {/* linkedin section */}
                   <div>
-                    <a
-                      href="https://www.linkedin.com/in/giorgi-mamulashvili-0a7883261/"
-                      target="_blank"
-                    >
+                    <a href={category.linkedinlink} target="_blank">
                       <div className="w-[55px] h-[55px] bg-[#ffffffd3] hover:bg-[#FFC451] rounded-[5px] flex justify-center items-center cursor-pointer md:w-[45px] md:h-[45px]">
                         <img
                           src={category.linkedin}
                           alt="LinkedIn"
-                          className="w-[30px] h-[30px] mx-1 md:w-[25px] md:h-[25px]x"
+                          className="w-[30px] h-[30px] mx-1 md:w-[25px] md:h-[25px]"
                         />
                       </div>
                     </a>

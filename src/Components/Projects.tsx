@@ -10,6 +10,7 @@ function Projects() {
     { title: "FRONT", category: "front-end" },
     { title: "BACK", category: "back-end" },
   ];
+
   const [filterCategory, setFilterCategory] = useState<string>("");
 
   // Filter images based on selected category
