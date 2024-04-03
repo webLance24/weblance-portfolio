@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { MyContext } from "./Context";
 import logo from "../../public/assets/weblance-logo.png";
 import { Link } from "react-scroll";
@@ -17,13 +17,31 @@ function DesktopHeader() {
     "Contact",
   ];
 
-  <Scrollspy
-    items={buttonCategories.map((category) =>
+  // Function to handle scroll event and update the current section
+  const handleScroll = () => {
+    const sections = buttonCategories.map((category) =>
       category.toLowerCase().replace(/\s+/g, "-")
-    )}
-    currentClassName="active"
-    offset={-100}
-  ></Scrollspy>;
+    );
+    for (let i = 0; i < sections.length; i++) {
+      const section = document.getElementById(sections[i]);
+      if (
+        section &&
+        section.offsetTop <= window.scrollY + 100 &&
+        section.offsetTop + section.offsetHeight > window.scrollY + 100
+      ) {
+        setSelected(buttonCategories[i]);
+        break;
+      }
+    }
+  };
+
+  // Effect to add scroll event listener when component mounts
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array ensures that the effect runs only once when component mounts
 
   return (
     <header
@@ -32,30 +50,50 @@ function DesktopHeader() {
       } bg-opacity-80 items-center w-[100%] h-[70px] fixed z-10 hidden lg:flex lg:justify-around`}
     >
       <img className="w-[70px]" src={logo} alt="here is weblance logo" />
-      <ul className="flex justify-center items-center flex-row gap-[40px] ml-[40px]">
-        {buttonCategories.map((category, index) => {
-          const categoryId = category.toLowerCase().replace(/\s+/g, "-");
-          return (
-            <Link
-              key={categoryId}
-              to={categoryId}
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
+      <Scrollspy
+        items={buttonCategories.map((category) =>
+          category.toLowerCase().replace(/\s+/g, "-")
+        )}
+        currentClassName="is-current"
+        offset={-100}
+      >
+        <ul className="flex justify-center items-center flex-row gap-[40px] ml-[40px]">
+          {buttonCategories.map((category, index) => {
+            const categoryId = category.toLowerCase().replace(/\s+/g, "-");
+            return (
               <li
-                className="text-[15px] font-semibold pt-[3px] pb-[3px] rounded-[5px] text-[white] hover:text-[#FFC451] duration-300 ease-in-out cursor-pointer"
                 key={index}
                 onClick={() => setSelected(category)}
                 style={selected === category ? { color: "#FFC451" } : {}}
               >
-                {category}
+                <Link
+                  key={categoryId}
+                  to={categoryId}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  onClick={() => {
+                    setSelected(category);
+                    setMenu(false);
+                    setHidden(false);
+                  }}
+                >
+                  <span
+                    className={`text-[15px] font-semibold pt-[3px] pb-[3px] rounded-[5px] ${
+                      selected === category || selected === category
+                        ? "text-[#FFC451]"
+                        : "text-white"
+                    } hover:text-[#FFC451] duration-300 ease-in-out cursor-pointer`}
+                  >
+                    {category}
+                  </span>
+                </Link>
               </li>
-            </Link>
-          );
-        })}
-      </ul>
+            );
+          })}
+        </ul>
+      </Scrollspy>
       <div className="flex">
         <Link
           to={"home"}

@@ -55,7 +55,14 @@ function App() {
         <Team />
         <Contact />
         <Footer />
-        <Link to={"home"} spy={true} smooth={true} offset={0} duration={500}>
+        <Link
+          to={"home"}
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onClick={() => setSelected("Home")}
+        >
           <div
             className={`fixed right-[10px] bottom-[10px] circle cursor-pointer w-[40px] h-[40px] hover:bg-[#ffc5515c] duration-300 ease-in-out outline-none bg-[${
               scrolled ? "#FFC451" : "transparent"
