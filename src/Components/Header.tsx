@@ -11,6 +11,8 @@ interface ComponentsProps {
   className: any;
 }
 
+// syule burger section
+
 const StyledBurger = ({
   hidden,
   setHidden,
@@ -57,6 +59,8 @@ function Header() {
     setSelected,
   }: any = context;
 
+  // use useeffect for when header scroll down show background
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -73,6 +77,8 @@ function Header() {
     };
   }, []);
 
+  // use refresh section on logo click with our logo
+
   return (
     <header
       className={`bg-${
@@ -80,7 +86,24 @@ function Header() {
       } bg-opacity-80 flex items-center pr-[15px] w-[100%] h-[70px] fixed z-10 lg:hidden`}
     >
       <div className="max-w-[520px] w-full m-auto flex justify-between items-center px-4 md:max-w-[1000px]">
-        <img className="w-[70px]" src={logo} alt="here is weblance logo" />
+        <Link
+          to={"home"}
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onClick={() => {
+            setMenu(false);
+            setHidden(false);
+            setSelected("Home");
+          }}
+        >
+          <img
+            className="w-[70px] cursor-pointer"
+            src={logo}
+            alt="here is weblance logo"
+          />
+        </Link>
         <div className="flex">
           <Link
             to={"home"}

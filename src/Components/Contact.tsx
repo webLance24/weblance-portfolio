@@ -146,11 +146,13 @@ function Contact() {
           <div>
             {categories.map((category, index) => {
               return (
-                <a href={category.link} target="_blank" className="pointer">
-                  <div
-                    key={index}
-                    className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px] md:mt-[40px]"
-                  >
+                <a
+                  href={category.link}
+                  target="_blank"
+                  className="pointer"
+                  key={index}
+                >
+                  <div className="w-[314px] h-[52px] flex justify-start items-center gap-[15px] mt-[50px] md:mt-[40px]">
                     <div className="w-[44px] h-[44px] bg-[#FFC451] rounded-[5px] flex justify-center items-center">
                       <img
                         className="w-[22px] h-[22px]"
