@@ -1,4 +1,4 @@
-// import david from "../../public/assets/team/david.jpg";
+import david from "../../public/assets/team/david.jpg";
 import gio from "../../public/assets/team/gio.jpg";
 import instagramIcon from "../../public/assets/social/instagram-profile.png";
 import githubIcon from "../../public/assets/social/github-profile.png";
@@ -17,23 +17,7 @@ function Team() {
     {
       name: "David Mikeladze",
       category: "CTO & Co-Founder",
-      src: gio,
-      insta: instagramIcon,
-      github: githubIcon,
-      linkedin: linkedinIcon,
-    },
-    {
-      name: "David Mikeladze",
-      category: "CTO & Co-Founder",
-      src: gio,
-      insta: instagramIcon,
-      github: githubIcon,
-      linkedin: linkedinIcon,
-    },
-    {
-      name: "David Mikeladze",
-      category: "CTO & Co-Founder",
-      src: gio,
+      src: david,
       insta: instagramIcon,
       github: githubIcon,
       linkedin: linkedinIcon,
