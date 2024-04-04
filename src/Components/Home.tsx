@@ -24,7 +24,7 @@ function Home() {
         We are team of talented digital developers
       </p>
       {/* Containers section */}
-      <div className="flex justify-center items-center flex-col m-auto gap-[20px] mt-[40px] max-w-[520px] md:flex-wrap md:flex-row md:max-w-[1024px] md:pb-[50px] 2xl:max-w-[1536px]">
+      <div className="flex justify-center items-center flex-col m-auto gap-[20px] mt-[40px] max-w-[520px] md:flex-wrap md:flex-row md:max-w-[1024px] md:pb-[80px] 2xl:max-w-[1536px]">
         {/* div where mapped all categories element */}
         {/* {categories.map((category, index) => {
           return (
