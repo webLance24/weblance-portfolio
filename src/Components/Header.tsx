@@ -77,8 +77,6 @@ function Header() {
     };
   }, []);
 
-  // use refresh section on logo click with our logo
-
   return (
     <header
       className={`bg-${
