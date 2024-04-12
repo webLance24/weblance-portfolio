@@ -49,11 +49,24 @@ function DesktopHeader() {
         scrolled ? "black" : "transparent"
       } bg-opacity-80 items-center w-[100%] h-[70px] fixed z-10 hidden lg:flex lg:justify-around`}
     >
-      <img
-        className="w-[70px] cursor-pointer"
-        src={logo}
-        alt="here is weblance logo"
-      />
+      <Link
+        to={"home"}
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        onClick={() => {
+          setMenu(false);
+          setHidden(false);
+          setSelected("Home");
+        }}
+      >
+        <img
+          className="w-[70px] cursor-pointer"
+          src={logo}
+          alt="here is weblance logo"
+        />
+      </Link>
       <Scrollspy
         items={buttonCategories.map((category) =>
           category.toLowerCase().replace(/\s+/g, "-")
