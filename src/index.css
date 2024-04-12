@@ -13,11 +13,14 @@
 body {
   min-height: 100vh;
   font-family: "Oswald", sans-serif;
+}
+
+#home {
   background-image: url("../public/assets/test.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: bottom;
+  background-blend-mode: color;
 }
 
 /* social media team hover */
