@@ -5,30 +5,42 @@
       "images": [
         {
           "title": "Front-end 1",
+          "src": "./assets/portfolio/expres.png",
+          "github": "https://github.com/webLance24/plant-ecommerce",
+          "live": "https://www.exspresstrade.ge/"
+        },
+        {
+          "title": "Front-end 2",
+          "src": "./assets/portfolio/collectlible.png",
+          "github": "https://github.com/webLance24/collectible.photoss",
+          "live": "https://www.collectible-photoss.ge/"
+        },
+        {
+          "title": "Front-end 3",
           "src": "./assets/portfolio/calc.png",
           "github": "https://github.com/Davmike/Calculator-app",
           "live": "https://davmike.github.io/Calculator-app/"
         },
         {
-          "title": "Front-end 2",
+          "title": "Front-end 4",
           "src": "./assets/portfolio/advice.png",
           "github": "https://github.com/Davmike/Advice-generator-app",
           "live": "https://davmike.github.io/Advice-generator-app/"
         },
         {
-          "title": "Front-end 3",
+          "title": "Front-end 5",
           "src": "./assets/portfolio/github.png",
           "github": "https://github.com/Davmike/github-user-search-app",
           "live": "https://github-user-search-app-brown.vercel.app/"
         },
         {
-          "title": "Front-end 4",
+          "title": "Front-end 6",
           "src": "./assets/portfolio/password.png",
           "github": "https://github.com/Davmike/password-generator-app",
           "live": "https://davmike.github.io/password-generator-app/"
         },
         {
-          "title": "Front-end 5",
+          "title": "Front-end 7",
           "src": "./assets/portfolio/tip-calc.png",
           "github": "https://github.com/Davmike/Tip-Calculator",
           "live": "https://davmike.github.io/Tip-Calculator/"
